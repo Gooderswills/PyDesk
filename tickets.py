@@ -39,5 +39,15 @@ Tickets = [
        "success_message": "You get to the server room, restart the servers and have to rewire the cables to the router, after 30 minutes the building is back online",
        "fail_message": "You call the isp, report the issue, they say someone will be over in 3 hours, building is offline for 4 hours, your manager is not happy",
        },
+       {"id": "1243",
+        "user": "Paul; Software Developer",
+        "priority": "High",
+        "issue": "Unable to access vs code, error message: 'Access denied'",
+        "option_1": "Check if user has the correct permissions, update if needed",#
+        "option_2": "Contact finance to check that they have paid for another year",
+        "correct_option": "option_1",
+        "success_message": "You check the users permissions; find that they have been removed from the vs code group, you add them back to the group and they can no access vs code again",
+        "fail_message": "You contact finance, they say that they have paid and to not bother them",
+        },
 
 ]

@@ -8,7 +8,7 @@ score = 0
 money = 0
 
 
-print("Hello and welcome to Helpdesk Hero, this is a text based game where you are an IT support employee, work through tickets and try and keep the company running!")
+print("Hello and welcome to PyDesk, this is a text based game where you are an IT support employee, work through tickets and try and keep the company running!")
 time.sleep(2)
 name = input("Hi there you must be new, what is your name? ")
 time.sleep(1)

@@ -1,6 +1,6 @@
-# Helpdesk Hero
+# PyDesk
 
-**Welcome to helpdesk hero - an IT helpdesk text simulator, based in python**
+**Welcome to PyDesk - an IT helpdesk text simulator, based in python**
 
 ## What is it?
 
