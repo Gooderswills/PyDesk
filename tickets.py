@@ -49,5 +49,15 @@ Tickets = [
         "success_message": "You check the users permissions; find that they have been removed from the vs code group, you add them back to the group and they can no access vs code again",
         "fail_message": "You contact finance, they say that they have paid and to not bother them",
         },
+        {"id": "1334",
+         "user": "Sarah; Sales",
+         "priority": "Medium",
+         "issue": "Unable to access shared drive, error message: 'Drive not found'",
+         "option_1": "Remap network drive on device",
+         "option_2": "Check if the user has the correct permissions, update if needed",
+         "correct_option": "option_1",
+         "success_message": "You remap the network drive on the users device, they can now access the shared drive",
+         "fail_message": "You check the users permissions, they have the correct permissions but still cannot access the shared drive",
+        },
 
 ]

@@ -29,11 +29,13 @@ while game_over == False:
     print("You have a new ticket from", ticket["user"])
     print("Issue:", ticket["issue"])
     print("Priority:", ticket["priority"])
-    print()
     print("Option 1:", ticket["option_1"])
     print("Option 2:", ticket["option_2"])
-    print()
-    choice = input("Option 1 or 2?")
+    choice = ""
+    while choice != "1" and choice != "2":
+        choice = input("Option 1 or 2?")
+        if choice != "1" and choice != "2":
+            print("Invalid input, try again")
     if choice == "1":
         if ticket["correct_option"] == "option_1":
             print(ticket["success_message"])
@@ -51,7 +53,11 @@ while game_over == False:
     else:
         print("Error, invalid input")
 
-    action = input("Continue or End shift?(C/E)").upper()
+    action = ""
+    while action != "C" and action != "E":
+        action = input("Continue or End shift?(C/E)").upper()
+        if action != "C" and action != "E":
+            print("Invalid input, try again")
 
     if action == "E":
         print("Shift over, you completed", score, "tickets and earned £", money,)
