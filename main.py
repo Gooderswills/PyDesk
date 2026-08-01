@@ -6,7 +6,16 @@ game_over = False
 last_ticket = None
 score = 0
 money = 0
+shift_time = 8
 
+ticket_queue = []
+
+def get_next_ticket():
+    global ticket_queue
+    if not ticket_queue:
+        ticket_queue = list(tickets.Tickets)
+        random.shuffle(ticket_queue)
+    return ticket_queue.pop()
 
 print("Hello and welcome to PyDesk, this is a text based game where you are an IT support employee, work through tickets and try and keep the company running!")
 time.sleep(2)
@@ -19,12 +28,10 @@ print("Let's not waste any time, you've already got tickets coming through!")
 time.sleep(2)
 print()
 
-while game_over == False:
-    ticket = random.choice(tickets.Tickets)
-    if len(tickets.Tickets) > 1:
-        while ticket == last_ticket:
-            ticket = random.choice(tickets.Tickets)
-    last_ticket = ticket
+while game_over == False and shift_time > 0:
+    ticket = get_next_ticket()
+    print("---------------------------------------------------")
+    print("You have ", shift_time, "hours left in your shift")
     print("---------------------------------------------------")
     print("You have a new ticket from", ticket["user"])
     print("Issue:", ticket["issue"])
@@ -43,6 +50,7 @@ while game_over == False:
             money = money + 10
         elif ticket["correct_option"] == "option_2":
             print(ticket["fail_message"])
+            money = money - 5
     elif choice == "2":
         if ticket["correct_option"] == "option_2":
             print(ticket["success_message"])
@@ -50,15 +58,20 @@ while game_over == False:
             money = money + 10
         elif ticket["correct_option"] == "option_1":
             print(ticket["fail_message"])
+            money = money - 5
     else:
         print("Error, invalid input")
 
+    shift_time = shift_time - ticket["time_taken"]
     action = ""
-    while action != "C" and action != "E":
-        action = input("Continue or End shift?(C/E)").upper()
-        if action != "C" and action != "E":
-            print("Invalid input, try again")
+    print("---------------------------------------------------")
+    print("You took", ticket["time_taken"], "hours to complete this ticket")
+    print("You have earned £", money, "so far by completing", score, "tickets")
+    load_time = random.randint(1,5)
+    time.sleep(load_time)
 
-    if action == "E":
+    if shift_time <= 0:
+        print("---------------------------------------------------")
         print("Shift over, you completed", score, "tickets and earned £", money,)
+        print("----------------------------------------------------")
         game_over = True

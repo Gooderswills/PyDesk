@@ -14,4 +14,4 @@ If you want to get into an IT job, then this game is a good staring point with r
 2. Run main.py
 
 
-**Thanks for playing, I hope you enjoyed it and if there are any bugs or errors feel free to contact me on [slack](https://hackclub.enterprise.slack.com/team/U0B7CJSUEG7) or report an issue on the [github page](https://github.com/Gooderswills/HelpdeskHero/issues)**
+**Thanks for playing, I hope you enjoyed it and if there are any bugs or errors feel free to contact me on [slack](https://hackclub.enterprise.slack.com/team/U0B7CJSUEG7) or report an issue on the [github page](https://github.com/Gooderswills/PyDesk/issues)**
