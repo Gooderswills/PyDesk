@@ -10,8 +10,10 @@ If you want to get into an IT job, then this game is a good staring point with r
 
 # How to play?
 
-1. Clone the repository or download main.py
-2. Run main.py
+1. Download the 'PyDesk.zip' file.
+2. Extract the file.
+3. Double click the main.exe file.
+4. Play through the text based game and have fun!
 
 
 **Thanks for playing, I hope you enjoyed it and if there are any bugs or errors feel free to contact me on [slack](https://hackclub.enterprise.slack.com/team/U0B7CJSUEG7) or report an issue on the [github page](https://github.com/Gooderswills/PyDesk/issues)**
