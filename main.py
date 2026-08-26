@@ -1,6 +1,8 @@
 import time
 import random
 import tickets
+import json
+import os
 
 game_over = False
 last_ticket = None
@@ -17,18 +19,47 @@ def get_next_ticket():
         random.shuffle(ticket_queue)
     return ticket_queue.pop()
 
-print("Hello and welcome to PyDesk, this is a text based game where you are an IT support employee, work through tickets and try and keep the company running!")
-time.sleep(2)
-name = input("Hi there you must be new, what is your name? ")
-time.sleep(1)
-print("Nice to meet you", name , "I am Will, your manager and I will help you get started on your first day")
-time.sleep(2)
+def save_game(name, score, money):
+    save_data = {
+        "name": name,
+        "score": score,
+        "money": money
+    }
+    with open("savegame.json", "w") as file:
+        json.dump(save_data, file, indent=4)
 
-print("Let's not waste any time, you've already got tickets coming through!")
-time.sleep(2)
-print()
+def load_game():
+    try:
+        with open("savegame.json", "r") as file:
+            return json.load(file)
+    except FileNotFoundError:
+        return None
+
+def clear_terminal():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+save_data = load_game()
+
+if save_data:
+    name = save_data["name"]
+    score = save_data["score"]
+    money = save_data["money"]
+
+    print("Welcome back to PyDesk,", name, "you have completed", score, "tickets and earned £", money)
+    time.sleep(2)
+else:
+    print("Hello and welcome to PyDesk, this is a text based game where you are an IT support employee, work through tickets and try and keep the company running!")
+    time.sleep(2)
+    name = input("Hi there you must be new, what is your name? ")
+    time.sleep(1)
+    print("Nice to meet you", name , "I am Will, your manager and I will help you get started on your first day")
+    time.sleep(2)
+    print("Let's not waste any time, you've already got tickets coming through!")
+    time.sleep(2)
+    print()
 
 while game_over == False and shift_time > 0:
+    clear_terminal()
     ticket = get_next_ticket()
     print("---------------------------------------------------")
     print("You have ", shift_time, "hours left in your shift")
@@ -38,6 +69,8 @@ while game_over == False and shift_time > 0:
     print("Priority:", ticket["priority"])
     print("Option 1:", ticket["option_1"])
     print("Option 2:", ticket["option_2"])
+    print()
+    print()
     choice = ""
     while choice != "1" and choice != "2":
         choice = input("Option 1 or 2?")
@@ -64,11 +97,15 @@ while game_over == False and shift_time > 0:
 
     shift_time = shift_time - ticket["time_taken"]
     action = ""
+    print()
+    print()
     print("---------------------------------------------------")
     print("You took", ticket["time_taken"], "hours to complete this ticket")
     print("You have earned £", money, "so far by completing", score, "tickets")
-    load_time = random.randint(1,5)
-    time.sleep(load_time)
+    save_game(name, score, money)
+    print("---------------------------------------------------")
+    print("Game Saved")
+    time.sleep(4)
 
     if shift_time <= 0:
         print("---------------------------------------------------")
