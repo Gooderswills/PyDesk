@@ -120,5 +120,27 @@ Tickets = [
          "fail_message": "You ask the engineering manager, he says he cannot tell you what the latest mockup is and to get on with helping Daniel",
          "time_taken": 0.5
         },
+        {"id": "1765",
+         "user": "Samantha; Sales",
+         "priority": "High",
+         "issue": "Unable to access sales report, error message: 'Database does not exist'",
+         "option_1": "Restart file server",
+         "option_2": "Check through recent backups for the sales report, restore if needed",
+         "correct_option": "option_2",
+         "success_message": "You checl the recent backups, find that an intern deleted the sales report, you restore it and sales can now access it",
+         "fail_message": "You restart the file server, but the sales report is still not accessible",
+         "time_taken": 1
+         },
+         {"id": "1842",
+          "user": "Olivia; Marketing",
+          "Priority": "Medium",
+          "issue": "Social media campaign drafts missing, error message: 'Files not found'",
+          "option_1": "Check backups for the drafts, restore if needed",
+          "option_2": "Restart Router on Marketing floor",
+          "correct_option": "option_1",
+          "success_message": "You check the backups, find that the drafts were deleted and renamed, you restore them and marketing can now access them",
+          "fail_message": "You restart the router, but the drafts are still missing",
+          "time_taken": 1
+         }
 
         ]
