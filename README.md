@@ -1,3 +1,4 @@
+![PyDesk Screenshot](https://cdn.hackclub.com/01a06172-c7e3-77c1-8155-ebcd6acb2086/Screenshot%202026-08-01%20220629.png)
 # PyDesk
 
 **Welcome to PyDesk - an IT helpdesk text simulator, based in python**
@@ -17,3 +18,5 @@ If you want to get into an IT job, then this game is a good staring point with r
 
 
 **Thanks for playing, I hope you enjoyed it and if there are any bugs or errors feel free to contact me on [slack](https://hackclub.enterprise.slack.com/team/U0B7CJSUEG7) or report an issue on the [github page](https://github.com/Gooderswills/PyDesk/issues)**
+
+**If you want to view more of my work view my [website](https://wgdev.uk)**
