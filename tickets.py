@@ -141,6 +141,28 @@ Tickets = [
           "success_message": "You check the backups, find that the drafts were deleted and renamed, you restore them and marketing can now access them",
           "fail_message": "You restart the router, but the drafts are still missing",
           "time_taken": 1
-         }
+         },
+         {"id": "1856",
+          "user": "Liam; Finance",
+          "priority": "Critical",
+          "issue": "Finance system is unable to process payments, error message: 'Outdated tokens'",
+          "option_1": "Check if finance switch is down, restart if needed",
+          "option_2": "Contact finance system provider to update tokens and restart system",
+          "correct_option": "option_2",
+          "success_message": "You contact the finance system provider, they update the tokens and restart the system, finance can now process payments",
+          "fail_message": "You check the finance switch, find that it is not down and the system still cannot process payments",
+          "time_taken": 2
+          },
+          {"id": "1867",
+           "user": "Bob; Apprentice",
+           "priority": "Low",
+           "issue": "Needs access to company software and database, error message 'Access denied'",
+           "option_1": "Add Bob to correct groups and ensure he has access to company software and databases",
+           "option_2": "Reset Bob's Password",
+           "correct_option": "option_1",
+           "success_message": "You add Bob to the correct groups and ensure he has access to company software and databases, he can now be successful.",
+           "fail_message": "You reset Bob's password, but he still cannot access company software and databases",
+           "time_taken": 0.5
+           },
 
         ]
