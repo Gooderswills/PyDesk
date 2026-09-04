@@ -164,5 +164,16 @@ Tickets = [
            "fail_message": "You reset Bob's password, but he still cannot access company software and databases",
            "time_taken": 0.5
            },
+           {"id": "1888",
+            "user": "Alice; HR",
+            "priority": "High",
+            "issue": "Unable to access hiring portal, error message: 'Network Connection Lost'",
+            "option_1": "Check if the network switch is down, restart if needed",
+            "option_2": "Contact hiring portal provider to check for outages",
+            "correct_option": "option_1",
+            "success_message": "You check the network switch, find that it is down and restart it, HR can now access the hiring portal",
+            "fail_message": "You contact the hiring portal provider, they say there are no outages and HR still cannot access the hiring portal",
+            "time_taken": 1
+            },
 
         ]
