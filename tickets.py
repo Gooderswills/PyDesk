@@ -175,5 +175,27 @@ Tickets = [
             "fail_message": "You contact the hiring portal provider, they say there are no outages and HR still cannot access the hiring portal",
             "time_taken": 1
             },
+            {"id": "1964",
+            "user": "Charlie; IT",
+            "priority": "Medium",
+            "issue": "Unable to save files, error message: 'Disk Full'",
+            "option_1": "Check disk space, remove unnecessary files if needed",
+            "option_2": "Run a virus scan to check for malware",
+            "correct_option": "option_1",
+            "success_message": "You check the disk space, find that it is full and remove unnecessary files, Charlie's files can now be saves",
+            "fail_message": "You run a virus scan, but find no malware and Charlie still cannot save files",
+            "time_taken": 1
+            },
+            {"id": "1975",
+             "user": "Diana; Marketing",
+             "priority": "High",
+             "issue": "unable to access marketing analytics, error message: 'Access Denied'",
+             "option_1": "Check if Diana has correct permissions, update if needed",
+             "option_2": "Check if marketing server is down, restart if needed",
+             "correct_option": "option_1",
+             "success_message": "You check Diana's permissions, find that she has been removed from the marketing group, you add her back and she can now access marketing analytics",
+             "fail_message": "You check the marketing server, find that it is not down and Diana still cannot access marketing analytics",
+             "time_taken": 0.5
+             },
 
         ]
