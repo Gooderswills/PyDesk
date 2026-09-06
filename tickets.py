@@ -197,5 +197,16 @@ Tickets = [
              "fail_message": "You check the marketing server, find that it is not down and Diana still cannot access marketing analytics",
              "time_taken": 0.5
              },
+             {"id": "1987",
+              "user": "Edward; QA",
+              "priority": "High",
+              "issue": "Unable to access QA testing sandbox, error message: 'Unable to connect to sandbox'",
+              "option_1": "Restart QA testing sandbox server",
+              "option_2": "ASk finance to check that they still have a valid subscription for the sandbox software",
+              "correct_option": "option_1",
+              "success_message": "You restart the QA testing sandbox server, and now Edward can access it",
+              "fail_message": "You ask finance about the subscription, they say it is still valid but Edward still cannot access the QA testing sandbox",
+              "time_taken": 0.5,
+             },
 
         ]
