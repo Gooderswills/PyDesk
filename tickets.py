@@ -208,5 +208,16 @@ Tickets = [
               "fail_message": "You ask finance about the subscription, they say it is still valid but Edward still cannot access the QA testing sandbox",
               "time_taken": 0.5,
              },
+             {"id": "1995",
+              "user": "Dylan; Project Management",
+              "priority": "Medium",
+              "issue": "Unable to access gannt charts and project timelines, error message: 'Outdated software version'",
+              "option_1": "Do a virus scan on the users computer",
+              "option_2": "Update the project management software to the latest version",
+              "correct_option": "option_2",
+              "success_message": "You update the project management software to the latest version, now Dylan can access the gannt charts and project timelines",
+              "fail_message": "You do a virus scan on the users computer, but find no viruses and Dylan still cannot access the gannt charts and project timelines",
+              "time_taken": 1
+              },
 
         ]
