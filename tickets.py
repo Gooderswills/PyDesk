@@ -133,7 +133,7 @@ Tickets = [
          },
          {"id": "1842",
           "user": "Olivia; Marketing",
-          "Priority": "Medium",
+          "priority": "Medium",
           "issue": "Social media campaign drafts missing, error message: 'Files not found'",
           "option_1": "Check backups for the drafts, restore if needed",
           "option_2": "Restart Router on Marketing floor",
@@ -219,5 +219,16 @@ Tickets = [
               "fail_message": "You do a virus scan on the users computer, but find no viruses and Dylan still cannot access the gannt charts and project timelines",
               "time_taken": 1
               },
+              {"id": "2001",
+               "user": "Steve; Fulfillment",
+               "priority": "Critical",
+               "issue": "Unable to access warehous management systems, inventory tracking and order processing, error message: 'Unknown fatal error'",
+               "option_1": "Restart physical and cloud servers,report bug to software developers to fix the issue",
+               "option_2": "Ensure that the connection from the servers to the warehouse is working, if not fix the connection",
+               "correct_option": "option_1",
+               "success_message": "You restart the physical and cloud servers, report the bug to the software developers who fix the issue, steve can now access the warehouse management systems, inventory tracking and order processing",
+               "fail_message": "You check the connection from the servers to the warehouse, find that it is working and steve still cannot access the warehouse management systems, inventory tracking and order processing",
+               "time_taken": 2,
+               },
 
         ]
