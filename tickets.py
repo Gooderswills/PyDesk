@@ -230,5 +230,16 @@ Tickets = [
                "fail_message": "You check the connection from the servers to the warehouse, find that it is working and steve still cannot access the warehouse management systems, inventory tracking and order processing",
                "time_taken": 2,
                },
+               {"id": "2009",
+                "user": "Rachel; Customer Support",
+                "priority": "High",
+                "issue": "Unable to access customer support ticketing system, error message: 'Storage full'",
+                "option_1": "Check storage space, remove unnecessary files",
+                "option_2": "Contact ticketing system provider to check for any current outages",
+                "correct_option": "option_1",
+                "success_message": "You check the storage space, find that it is full and remove unnecessary files, Rachel can now access the customer support ticketing system",
+                "fail_message": "You contact the ticketing system provider, they say there are no outages and Rachel still cannot access the customer support ticketing system",
+                "time_taken": 1
+                },
 
         ]
