@@ -241,5 +241,27 @@ Tickets = [
                 "fail_message": "You contact the ticketing system provider, they say there are no outages and Rachel still cannot access the customer support ticketing system",
                 "time_taken": 1
                 },
+                {"id": "2013",
+                 "user": "Tom; Customer Relations",
+                 "priority": "Medium",
+                 "issue": "Unable to make calls to customers, error message: 'Number Expired'",
+                 "option_1": "Buy a new phone for the customer relations team",
+                 "option_2": "Contact mobile provider to check if the number has expired, if it has then renew the numhber",
+                 "correct_option": "option_2",
+                 "success_message": "You contact the mobile provider, they say that the number has expire, they renew the number and now Tom can make calls to customer again",
+                 "fail_message": "You buy a new phone for the customer relations team, but Tom still cannot make calls to customers, the phone is redundant",
+                 "time_taken": 1
+                },
+                {"id": "2020",
+                 "user": "Anna; logistics",
+                 "priority": "Critical",
+                 "issue": "Unable to access delivery tracking system, error message: 'Account deactivated'",
+                 "option_1": "Check if Anna has the correct permissions, update if needed",
+                 "option_2": "Reactivate Anna's account in the delivery tracking system",
+                 "correct_option": "option_2",
+                 "success_message": "You reactivate Anna's account in the delivery tracking system, she can now access the delivery tracking system",
+                 "fail_message": "You check Anna's permissions, find that she has the correct permissions but she still cannot access the delivery tracking system",
+                 "time_taken": 0.5
+                 },
 
         ]
