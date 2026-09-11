@@ -263,5 +263,16 @@ Tickets = [
                  "fail_message": "You check Anna's permissions, find that she has the correct permissions but she still cannot access the delivery tracking system",
                  "time_taken": 0.5
                  },
+                 {"id": "2021",
+                  "user": "Michael; Business Management",
+                  "priority": "High",
+                  "issue": "Unable to access business analytics dashboard, error message: 'Server not found'",
+                  "option_1": "Check is business server is down, restart if needed",
+                  "option_2": "Recover business analytics data from recent backups, restore if needed",
+                  "correct_option": "option_1",
+                  "success_message": "You check the business server, find that it is down and restart it, Michael can now access the business analytics dashboard",
+                  "fail_message": "You recover business analytics data from recent backups, but the server is still down and Michael still cannot access the business analytics dashboard",
+                  "time_taken": 1
+                  },
 
         ]
