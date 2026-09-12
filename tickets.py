@@ -274,5 +274,27 @@ Tickets = [
                   "fail_message": "You recover business analytics data from recent backups, but the server is still down and Michael still cannot access the business analytics dashboard",
                   "time_taken": 1
                   },
+                  {"id": "2023",
+                   "user": "Samuel; Resource Management",
+                   "priority": "Low",
+                   "issue": "Unable to print resource reports, error message: 'Printer not found'",
+                   "option_1": "Check if the printer is conected to the network, reconnect if needed",
+                   "option_2": "Check if the user has the correct permissions, update if needed",
+                   "correct_option": "option_1",
+                   "success_message": "You check the printer, find that it is not connected to the network, you reconnect it and Samuel can now print resource reports",
+                   "fail_message": "You check the users permissions, find that they have the correct permissions but they still cannot print resource reports",
+                   "time_taken": 0.5
+                   },
+                   {"id": "2024",
+                    "user": "Max; Web Development",
+                    "priority": "Medium",
+                    "issue": "Unable to deploy websites to production, error message: 'Deployment failed'",
+                    "option_1": "Check if the deployment server is down, restart if needed",
+                    "option_2": "Check deployment logs for errors, fix if needed",
+                    "correct_option": "option_2",
+                    "success_message": "You check the deployment logs, find that there was a missing dependency, you fix it and Max can now deploy websites to production",
+                    "fail_message": "You check the deployment server, find that it is not down and Max still cannot deploy websites to production",
+                    "time_taken": 1
+                    },
 
         ]
