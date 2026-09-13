@@ -16,6 +16,11 @@ If you want to get into an IT job, then this game is a good staring point with r
 3. Double click the main.exe file.
 4. Play through the text based game and have fun!
 
+## Converting python to an exe
+
+[Here](https://github.com/Gooderswills/PyDesk/blob/main/PythonToExe.md) is my guide on converting python files to an exe if you want to take a look!
+
+
 
 **Thanks for playing, I hope you enjoyed it and if there are any bugs or errors feel free to contact me on [slack](https://hackclub.enterprise.slack.com/team/U0B7CJSUEG7) or report an issue on the [github page](https://github.com/Gooderswills/PyDesk/issues)**
 
