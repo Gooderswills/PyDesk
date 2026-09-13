@@ -1,0 +1,24 @@
+# Converting python to an exe
+
+## Step 1
+
+Navigate to your project folder: cd G:\path\to\project
+
+
+## Step 2
+
+Install pyinstaller if needed: pip install pyinstaller
+
+## Step 3
+
+Use pyinstaller: `pyinstaller --onefile --name PyDesk main.py`
+
+--onefile bundles everything into a singular exe
+
+--name PyDesk sets the name for the exe to be PyDesk
+
+main.py tells pyinstalled which file to aim for
+
+## Step 4
+
+There should now be a dist folder in your project folder, in here should be the exe, run it if you want to test it, if you want to upload it to github then convert it to a zip first.

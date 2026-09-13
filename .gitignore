@@ -4,3 +4,4 @@ dist/
 *.spec
 *.pyc
 savegame.json
+PythonToExePriv.md
