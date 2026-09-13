@@ -296,5 +296,38 @@ Tickets = [
                     "fail_message": "You check the deployment server, find that it is not down and Max still cannot deploy websites to production",
                     "time_taken": 1
                     },
+                    {"id": "2026",
+                     "user": "Robert; Digital Marketing",
+                     "priority": "High",
+                     "issue": "Unable to edit and view marketing campaigns, error message: 'Account not found'",
+                     "option_1": "Contact marketing manager to ensure that campaign is still active",
+                     "option_2": "Check that Roberts account is still active and has the correct permissions, restore and update if needed",
+                     "correct_option": "option_2",
+                     "success_message": "You check Robert's account, find that it has been deactivated, you reactivate it and update his permissions, he can now view and edit the marketing campaign",
+                     "fail_message": "You contact the marketing manager, they say that the campaign is still active but Robert still cannot view or edit the marketing campaign",
+                     "time_taken": 1
+                     },
+                     {"id": "2030",
+                      "user": "Sophie; Customer Support",
+                      "priority": "Medium",
+                      "issue": "Unable to access customer support information database, error message: 'Access Denied'",
+                      "option_1": "Contact customer support manager to tell them to remake the database because it is corrupted",
+                      "option_2": "Check that Sophie's permissions allow her to access the customer support information database, update if needed",
+                      "correct_option": "option_2",
+                      "success_message": "You check Sophie's permissions, find that they do not allow her access to the information database, you update her permissions and she can now access the information database again",
+                      "fail_message": "You contact the customer support manager, they say that the database is corrupted and needs to be remade, the manager says that they can still access it but Sophie can still not access the database",
+                      "time_taken": 1
+                     },
+                     {"id": "2032",
+                      "user": "Lilly; HR",
+                      "priority": "Low",
+                      "issue": "Unable to post job listings, error message: 'Connection Lost'",
+                      "option_1": "Check the HR server, restart if needed",
+                      "option_2": "Check Lilly's permissions, update if needed",
+                      "correct_option": "option_1",
+                      "success_message": "You check the HR server, find that it is down and you restart it, Lilly can now post job listings",
+                      "fail_message": "You check Lilly's permissions, find that they are correct but she still cannot post job listings",
+                      "time_taken": 0.5
+                      },
 
         ]
