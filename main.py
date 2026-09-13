@@ -1,8 +1,9 @@
+import os
 import time
 import random
 import tickets
 import json
-import os
+import subprocess
 
 game_over = False
 last_ticket = None
@@ -36,7 +37,7 @@ def load_game():
         return None
 
 def clear_terminal():
-    os.system('cls' if os.name == 'nt' else 'clear')
+    subprocess.run('cls' if os.name == 'nt' else 'clear', shell=True)
 
 save_data = load_game()
 
@@ -73,7 +74,7 @@ while game_over == False and shift_time > 0:
     print()
     choice = ""
     while choice != "1" and choice != "2":
-        choice = input("Option 1 or 2?")
+        choice = input("Option 1 or 2? ")
         if choice != "1" and choice != "2":
             print("Invalid input, try again")
     if choice == "1":
@@ -111,4 +112,7 @@ while game_over == False and shift_time > 0:
         print("---------------------------------------------------")
         print("Shift over, you completed", score, "tickets and earned £", money,)
         print("----------------------------------------------------")
+        time.sleep(5)
+        print("Thanks for playing, hope to see you again soon!")
+        time.sleep(2)
         game_over = True
