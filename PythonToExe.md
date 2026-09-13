@@ -2,12 +2,12 @@
 
 ## Step 1
 
-Navigate to your project folder: cd G:\path\to\project
+Navigate to your project folder: `cd G:\path\to\project`
 
 
 ## Step 2
 
-Install pyinstaller if needed: pip install pyinstaller
+Install pyinstaller if needed: `pip install pyinstaller`
 
 ## Step 3
 
