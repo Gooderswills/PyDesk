@@ -329,5 +329,16 @@ Tickets = [
                       "fail_message": "You check Lilly's permissions, find that they are correct but she still cannot post job listings",
                       "time_taken": 0.5
                       },
+                      {"id": "2034",
+                       "user": "Ethan; Maintenance",
+                       "priority": "High",
+                       "issue": "ID card has stopped working, error: 'User not found'",
+                       "option_1": "Check that Ethan is in the maintenance group",
+                       "option_2": "Reset ID authentication server",
+                       "correct_option": "option_1",
+                       "success_message": "You find that Ethan has been removed from the maintenance group, so you add him back and now his ID is working again",
+                       "fail_message": "You reset the authentication server but Ethan's ID card is still not working",
+                       "time_taken": 0.5
+                       },
 
         ]
