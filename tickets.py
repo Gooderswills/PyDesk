@@ -340,5 +340,16 @@ Tickets = [
                        "fail_message": "You reset the authentication server but Ethan's ID card is still not working",
                        "time_taken": 0.5
                        },
+                       {"id": "2038",
+                        "user": "Finlay; Warehouse Operations",
+                        "priority": "High",
+                        "issue": "Warehouse dashboard stock levels not reflecting actual stock levels",
+                        "option_1": "Reset Finlay's password",
+                        "option_2": "Restart warehouse server",
+                        "correct_option": "option_2",
+                        "success_message": "You restart the warehouse server and it now reflects the actual stock levels",
+                        "fail_message": "You reset Finlay's password but the warehouse dashboard is still not updating",
+                        "time_taken": 1
+                        },
 
         ]
