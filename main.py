@@ -37,7 +37,10 @@ def load_game():
         return None
 
 def clear_terminal():
-    subprocess.run('cls' if os.name == 'nt' else 'clear', shell=True)
+    try:
+        subprocess.run('cls' if os.name == 'nt' else 'clear', shell=True)
+    except Exception:
+        print("\n" * 40)
 
 save_data = load_game()
 
