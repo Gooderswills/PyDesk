@@ -3,7 +3,6 @@ import time
 import random
 import tickets
 import json
-from js import localStorage
 import subprocess
 
 game_over = False
@@ -27,24 +26,15 @@ def save_game(name, score, money):
         "score": score,
         "money": money
     }
-    try:
-        localStorage.setItem("pydesk_savegame", json.dumps(save_data))
-    except Exception:
-        with open("savegame.json", "w") as file:
-            json.dump(save_data, file, indent=4)
+    with open("savegame.json", "w") as file:
+        json.dump(save_data, file, indent=4)
 
 def load_game():
     try:
-        save_data = localStorage.getItem("pydesk_savegame")
-        if save_data:
-            return json.loads(save_data)
-    except Exception:
-        try:
-            with open("savegame.json", "r") as file:
-                return json.load(file)
-        except FileNotFoundError:
-            return None
-    return None
+        with open("savegame.json", "r") as file:
+            return json.load(file)
+    except FileNotFoundError:
+        return None
 
 def clear_terminal():
     try:
