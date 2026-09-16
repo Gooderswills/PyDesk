@@ -351,5 +351,16 @@ Tickets = [
                         "fail_message": "You reset Finlay's password but the warehouse dashboard is still not updating",
                         "time_taken": 1
                         },
+                        {"id": "2040",
+                         "user": "Steve; Delivery Operations",
+                         "priority": "Medium",
+                         "issue": "Cannot track current deliveries, error message: 'Server not found'",
+                         "option_1": "Check there are current deliveries, if there are then reset their trackers",
+                         "option_2": "Reset delivery tracking server",
+                         "correct_option": "option_2",
+                         "success_message": "You restart the delivery server and now Steve can track current deliveries",
+                         "fail_message": "You reset the current deliveries trackers but Steve can still not track them",
+                         "time_taken": 1
+                         },
 
         ]
