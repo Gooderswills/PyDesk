@@ -23,9 +23,13 @@
         }
     </style>
 </head>
-<body>
+ <body>
     <div class="terminal-container">
-        <script type="py" config='{"files": ["main.py", "tickets.py"]}' terminal src="main.py"></script>
+        <py-config>
+            [fetch]
+            files = ["./main.py", "./tickets.py"]
+        </py-config>
+        <script type="py" terminal src="./main.py"></script>
     </div>
 </body>
 </html>
