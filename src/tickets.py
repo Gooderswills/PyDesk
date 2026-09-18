@@ -362,5 +362,16 @@ Tickets = [
                          "fail_message": "You reset the current deliveries trackers but Steve can still not track them",
                          "time_taken": 1
                          },
+                         {"id": "2048",
+                          "user": "Brian; Legal",
+                          "priority": "Medium",
+                          "issue": "Cannot access current cases, error message: 'Access Denied'",
+                          "option_1": "Reset Brain's permissions so he has access to the cases",
+                          "option_2": "Email Brian's boss to send him every active case",
+                          "correct_option": "option_1",
+                          "success_message": "You reset Brian's permissions so he can now access the legal cases",
+                          "fail_message": "You email Brian's boss, who is not happy, he sends Brain the cases but he still cannot access them",
+                          "time_taken": 0.5
+                          },
 
         ]
