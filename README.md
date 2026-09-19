@@ -5,16 +5,22 @@
 
 ## What is it?
 
-It's very simple, toplay all you need to do is to follow the storyline and answer the questions, it's a text based game so does not require much processing power to run and is very fun!
+It's very simple, to play all you need to do is to follow the storyline and answer the questions, it's a text based game so does not require much processing power to run and is very fun!
 
 If you want to get into an IT job, then this game is a good staring point with realistic scenarios and quizzes to help you practice
 
 # How to play?
 
-1. Download the 'PyDesk.zip' file.
-2. Extract the file.
-3. Double click the main.exe file.
-4. Play through the text based game and have fun!
+## Download via itch.io
+1. Visit the [itch.io game site](https://gooderswills.itch.io/pydesk)
+2. Download the 'PyDesk.exe file.
+3. Open the PyDesk.exe file by double clicking.
+4. Play through the game in your terminal and have fun!
+
+## Download via github releases
+1. Download the 'PyDesk.exe' file in the latest release.
+2. Double click to open the the PyDesk.exe file.
+3. Play through the text based game and have fun!
 
 ## Converting python to an exe
 
