@@ -373,5 +373,15 @@ Tickets = [
                           "fail_message": "You email Brian's boss, who is not happy, he sends Brain the cases but he still cannot access them",
                           "time_taken": 0.5
                           },
+                          {"id": "2052",
+                           "user": "Ben; Legal",
+                           "issue": "Cannot sign into company laptop, error message 'Account Expired'",
+                           "option_1": "Ask Ben if he is entering his correct account details",
+                           "option_2": "Send Ben a magic link to verify it is him and then reset his password",
+                           "correct_option": "option_2",
+                           "success_message": "You send Brian a magic link, he verifies it is him and then you reset his password, he can now access his account again",
+                           "fail_message": "Ben says he is entering the correct details, you don't believe him so he does not have access to his account",
+                           "time_taken": 1
+                           },
 
         ]
