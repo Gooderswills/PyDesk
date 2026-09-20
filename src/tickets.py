@@ -384,5 +384,16 @@ Tickets = [
                            "fail_message": "Ben says he is entering the correct details, you don't believe him so he does not have access to his account",
                            "time_taken": 1
                            },
+                           {"id": "2056",
+                            "user": "Dave; R&D",
+                            "priority": "Medium",
+                            "issue": "Internet not working on computer even though it is plugged in via ethernet, error message 'Not Connected to Internet'",
+                            "option_1": "Check the logs on Dave's computer, try redownloading network drivers",
+                            "option_2": "Make sure Dave's ethernet is plugged in",
+                            "correct_option": "option_1",
+                            "success_message": "You find that Dave's ethernet drivers are outdated, you update them and now his computer has access to the internet again",
+                            "fail_message": "You go to Dave's desk to ensure ethernet is plugged in, it is and his computer can still not connect to the internet",
+                            "time_taken": 1.5
+                            },
 
         ]

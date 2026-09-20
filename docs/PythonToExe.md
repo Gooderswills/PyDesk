@@ -2,14 +2,18 @@
 
 ## Step 1
 
-Navigate to your project folder: `cd G:\path\to\project`
-
+Open your terminal
 
 ## Step 2
 
-Install pyinstaller if needed: `pip install pyinstaller`
+Navigate to your project folder: `cd G:\path\to\project`
+
 
 ## Step 3
+
+Install pyinstaller if needed: `pip install pyinstaller`
+
+## Step 4
 
 Use pyinstaller: `pyinstaller --onefile --name PyDesk main.py`
 
@@ -19,6 +23,6 @@ Use pyinstaller: `pyinstaller --onefile --name PyDesk main.py`
 
 main.py tells pyinstalled which file to aim for
 
-## Step 4
+## Step 5
 
 There should now be a dist folder in your project folder, in here should be the exe, run it if you want to test it, if you want to upload it to github then convert it to a zip first.
