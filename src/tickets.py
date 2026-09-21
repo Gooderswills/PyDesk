@@ -376,7 +376,7 @@ Tickets = [
                           {"id": "2052",
                            "user": "Ben; Legal",
                            "priority": "High",
-                           "issue": "Cannot sign into company laptop, error message 'Account Expired'",
+                           "issue": "Cannot sign into company laptop, error message: 'Account Expired'",
                            "option_1": "Ask Ben if he is entering his correct account details",
                            "option_2": "Send Ben a magic link to verify it is him and then reset his password",
                            "correct_option": "option_2",
@@ -387,7 +387,7 @@ Tickets = [
                            {"id": "2056",
                             "user": "Dave; R&D",
                             "priority": "Medium",
-                            "issue": "Internet not working on computer even though it is plugged in via ethernet, error message 'Not Connected to Internet'",
+                            "issue": "Internet not working on computer even though it is plugged in via ethernet, error message: 'Not Connected to Internet'",
                             "option_1": "Check the logs on Dave's computer, try redownloading network drivers",
                             "option_2": "Make sure Dave's ethernet is plugged in",
                             "correct_option": "option_1",
@@ -395,5 +395,16 @@ Tickets = [
                             "fail_message": "You go to Dave's desk to ensure ethernet is plugged in, it is and his computer can still not connect to the internet",
                             "time_taken": 1.5
                             },
+                            {"id": "2060",
+                             "user": "Bob; Engineering",
+                             "priority": "Low",
+                             "issue": "3d printers are not working, error message: 'printer network error'",
+                             "option_1": "Check print server, restart if needed",
+                             "option_2": "Restart engineering network switch",
+                             "correct_option": "option_1",
+                             "success_message": "You find that the print server has a backlog of expired prints, you restart it and the 3d printers are now working again",
+                             "fail_message": "You restart the engineering switch, the engineering departments internet goes down and the 3d printers are still not working",
+                             "time_taken": 1
+                             },
 
         ]
