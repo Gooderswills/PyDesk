@@ -17,12 +17,12 @@ Install pyinstaller if needed: `pip install pyinstaller`
 
 Use pyinstaller: `pyinstaller --onefile --name PyDesk main.py`
 
---onefile bundles everything into a singular exe
+--onefile bundles everything into a single exe file
 
 --name PyDesk sets the name for the exe to be PyDesk
 
-main.py tells pyinstalled which file to aim for
+main.py tells pyinstaller which file to aim for
 
 ## Step 5
 
-There should now be a dist folder in your project folder, in here should be the exe, run it if you want to test it, if you want to upload it to github then convert it to a zip first.
+There should now be a dist folder in your project folder, in here should be the exe, run it if you want to test the exe, then upload to your chosen site (Github, Itch.io etc)

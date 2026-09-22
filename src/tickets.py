@@ -406,5 +406,15 @@ Tickets = [
                              "fail_message": "You restart the engineering switch, the engineering departments internet goes down and the 3d printers are still not working",
                              "time_taken": 1
                              },
+                             {"id": "2065",
+                              "user": "Dean; Manufacturing",
+                              "priority": "Critical",
+                              "issue": "Production files are not on Dean's computer, error message: 'Files not found'",
+                              "option_1": "Remote into Dean's computer to ensure he has internet access and to look for the files",
+                              "option_2": "Rrestore Dean's file system from a recent backup",
+                              "success_message": "You restore Dean's file system from a backup, he can now access the files again",
+                              "fail_message": "You remote into Dean's computer, find that he has internet access and you look around his files but you cannot find the files, Dean still does not have access to the production files",
+                              "time_taken": 1.5
+                              },
 
         ]
