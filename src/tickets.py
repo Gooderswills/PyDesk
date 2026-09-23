@@ -411,10 +411,22 @@ Tickets = [
                               "priority": "Critical",
                               "issue": "Production files are not on Dean's computer, error message: 'Files not found'",
                               "option_1": "Remote into Dean's computer to ensure he has internet access and to look for the files",
-                              "option_2": "Rrestore Dean's file system from a recent backup",
+                              "option_2": "Restore Dean's file system from a recent backup",
+                              "correct_option": "option_2",
                               "success_message": "You restore Dean's file system from a backup, he can now access the files again",
                               "fail_message": "You remote into Dean's computer, find that he has internet access and you look around his files but you cannot find the files, Dean still does not have access to the production files",
                               "time_taken": 1.5
                               },
+                              {"id": "2070",
+                               "user": "Max; Product Development",
+                               "priority": "High",
+                               "issue": "Unable to join team zoom meeting, error message: 'Connection interrupted",
+                               "option_1": "Restart the production floor internet server",
+                               "option_2": "Email finance to check that they have paid for zoom pro",
+                               "correct_option": "option_1",
+                               "success_message": "You restart the production floor's internet server, Max can now join the team call",
+                               "fail_message": "You email finance about zoom pro, they say that the subscription is still valid, Max can still not join the zoom call",
+                               "time_taken": 1
+                               },
 
         ]
