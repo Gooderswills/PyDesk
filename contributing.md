@@ -3,7 +3,7 @@
 ## How to help
 1. Fork the repo 
 2. Clone your fork locally
-3. Create  a branch for your contribution (e.g. 'add-more-tickets' )
+3. Create a branch for your contributions (e.g. 'add-more-tickets' )
 4. Edit the code
 5. Test your changes thoroughly
 6. Commit your changes with a clear message on what you have done
@@ -20,7 +20,7 @@
 
 All tickets in the game are inside 'tickets.py' please add them in here and make sure all tickets follow the format below:
 
-{"id": "unique 4 digit number",
+{"id": "unique 4 digit number (Higher than the last ID)",
 "user": "Name; Department",
 "priority": "Low,Medium,High,Critical", 
 "issue": "Problem, error message: 'error",
@@ -32,6 +32,12 @@ All tickets in the game are inside 'tickets.py' please add them in here and make
 "time_taken": 1 (just an estimate)
 },
 
-**Also make sure it is indented and under any previous tickets.**
+**Make sure it is indented and under any previous tickets.**
+
+Try to balance it so it is not always option 1 or 2 etc and vary priority/time etc
 
 If you look at previous tickets in the file it might be easier to understand
+
+## What you get
+
+If you contribute your name will go onto the [itch.io](https://gooderswills.itch.io/pydesk) page and onto the github readme
