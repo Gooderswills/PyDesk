@@ -20,6 +20,7 @@
 
 All tickets in the game are inside `tickets.py` please add them in here and make sure all tickets follow the format below:
 
+```python
 {"id": "unique 4 digit number (Higher than the last ID)",
 "user": "Name; Department",
 "priority": "Low,Medium,High,Critical", 
@@ -31,6 +32,7 @@ All tickets in the game are inside `tickets.py` please add them in here and make
 "fail_message": "Say why it failed",
 "time_taken": 1 (just an estimate)
 },
+```
 
 **Make sure it is indented and under any previous tickets.**
 
