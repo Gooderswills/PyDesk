@@ -13,13 +13,13 @@ If you want to get into an IT job, then this game is a good staring point with r
 
 ## Download via itch.io
 1. Visit the [itch.io game site](https://gooderswills.itch.io/pydesk)
-2. Download the 'PyDesk.exe' file.
-3. Open the PyDesk.exe file by double clicking.
+2. Download the `PyDesk.exe` file.
+3. Open the `PyDesk.exe` file by double clicking.
 4. Play through the game in your terminal and have fun!
 
 ## Download via github releases
-1. Download the 'PyDesk.exe' file in the latest release.
-2. Double click to open the the 'PyDesk.exe' file.
+1. Download the `PyDesk.exe` file in the latest release.
+2. Double click to open the the `PyDesk.exe` file.
 3. Play through the text based game and have fun!
 
 ## Converting python to an exe
@@ -29,10 +29,10 @@ If you want to get into an IT job, then this game is a good staring point with r
 # For Developers
 
 ## Contributing
-Please view the 'contributing.md' file if you wish to contribute to the game in anyway.
+Please view the `contributing.md` file if you wish to contribute to the game in anyway.
 
 ## Viewing ticket stats
-If you want to view stats about the number of tickets, departments etc then download 'stats.py' along with the 'main.py' and 'tickets.py' then run 'stats.py' and it will display all the stats about the tickets currently in the game
+If you want to view stats about the number of tickets, departments etc then download `stats.py` along with the `main.py` and `tickets.py` then run `stats.py` and it will display all the stats about the tickets currently in the game
 
 
 
