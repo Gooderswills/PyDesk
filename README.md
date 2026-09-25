@@ -20,7 +20,7 @@ If you want to get into an IT job, then this game is a good staring point with r
 ## Download via github releases
 1. Download the `PyDesk.exe` file in the latest release.
 2. Double click to open the the `PyDesk.exe` file.
-3. Play through the text based game and have fun!
+3. Play through the game in your terminal and have fun!
 
 ## Converting python to an exe
 
