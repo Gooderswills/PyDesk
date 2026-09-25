@@ -428,5 +428,16 @@ Tickets = [
                                "fail_message": "You email finance about zoom pro, they say that the subscription is still valid, Max can still not join the zoom call",
                                "time_taken": 1
                                },
+                               {"id": "2075",
+                                "user": "Michael; Software Developer",
+                                "priority": "Medium",
+                                "issue": "Unable to access codebase, error message: 'Access Denied'",
+                                "option_1": "Restore Michael's access to the codebase by ensuring he has access to the git repository and is in the developers group",
+                                "option_2": "Get Michael to ask another developer for the codebase",
+                                "correct_option": "option_1",
+                                "success_message": "You add Michael back to the developer group and you also add gim back to the git repository",
+                                "fail_message": "Michael gets the codebase from another developer but is not happy as it is an outdated version",
+                                "time_taken": 1
+                                },
 
         ]
