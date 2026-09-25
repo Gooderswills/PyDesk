@@ -24,7 +24,7 @@ If you want to get into an IT job, then this game is a good staring point with r
 
 ## Converting python to an exe
 
-[Here](https://github.com/Gooderswills/PyDesk/blob/main/docs/PythonToExe.md) is my guide on converting python files to an exe if you want to take a look!
+[Here](https://github.com/Gooderswills/PyDesk/blob/main/guides/PythonToExe.md) is my guide on converting python files to an exe if you want to take a look!
 
 # For Developers
 
