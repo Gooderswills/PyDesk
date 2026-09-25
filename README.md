@@ -26,6 +26,10 @@ If you want to get into an IT job, then this game is a good staring point with r
 
 [Here](https://github.com/Gooderswills/PyDesk/blob/main/guides/PythonToExe.md) is my guide on converting python files to an exe if you want to take a look!
 
+## Viewing the website/landing page
+
+To view the website for PyDesk visit [pydesk.wgdev.uk](https://pydesk.wgdev.uk/)
+
 # For Developers
 
 ## Contributing
