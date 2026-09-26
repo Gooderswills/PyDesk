@@ -3,6 +3,7 @@
     --accent-color: #00e038;
     --border-color: #30363d;
     --text-main: #c9d1d9;
+    --fail-color: #ff5555;
 }
 
 body {
@@ -32,4 +33,77 @@ nav {
 
 nav a {
     font-size: 16px;
+}
+
+#practice {
+    margin-top: 20px;
+}
+ 
+.terminal {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background: #010409;
+    padding: 20px;
+    cursor: text;
+}
+ 
+.terminal-output {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+ 
+.terminal-output .success {
+    color: var(--accent-color);
+}
+ 
+.terminal-output .fail {
+    color: var(--fail-color);
+}
+ 
+.terminal-output .prompt {
+    color: var(--text-main);
+}
+ 
+.terminal-line {
+    display: flex;
+}
+ 
+.terminal-prefix {
+    color: var(--accent-color);
+    margin-right: 8px;
+    white-space: nowrap;
+}
+ 
+.terminal-input-wrap {
+    display: flex;
+    align-items: center;
+}
+ 
+#terminal-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-main);
+    font-family: inherit;
+    font-size: 18px;
+    caret-color: transparent;
+    width: 20px;
+    padding: 0;
+}
+ 
+.cursor {
+    display: inline-block;
+    width: 9px;
+    height: 20px;
+    background: var(--accent-color);
+    animation: blink 1s step-start infinite;
+    margin-left: 2px;
+}
+ 
+@keyframes blink {
+    50% { opacity: 0; }
+}
+ 
+.hidden {
+    display: none;
 }

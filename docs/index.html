@@ -9,13 +9,31 @@
     <body>
         <h1>PyDesk</h1>
         <nav>
-            <a href="#what-is-it">What is it</a>
+            <a href="#What-is-it">What is it</a>
+            <a href="#Try-a-ticket">Try a ticket</a>
             <a href="#How-to-play">How to play</a>
         </nav>
 
-        <section id="what-is-it">
+        <section id="What-is-it">
             <h2>What is it</h2>
             <p>PyDesk is an IT helpdesk simulator written in python, run in your terminal</p>
+        </section>
+
+        <section id="Try-a-ticket">
+            <h2>Try a ticket</h2>
+            <p>Try out an example ticket from PyDesk</p>
+            <p>Type <code>1</code> or <code>2</code> just like the actual game to choose the option.</p>
+
+                <div class="terminal" id="terminal">
+        <div class="terminal-output" id="output"></div>
+        <div class="terminal-line" id="input-line">
+            <span class="terminal-prefix">&gt;</span>
+            <div class="terminal-input-wrap">
+                <input type="text" id="terminal-input" maxlength="1" autocomplete="off" spellcheck="false">
+                <span class="cursor" id="cursor"></span>
+            </div>
+        </div>
+    </div>
         </section>
 
         <section id="How-to-play">
@@ -43,6 +61,8 @@
         <footer>
             <p>© 2026 Will. All rights reserved.</p>
         </footer>
+
+        <script src="script.js"></script>
 
     </body>
 </html>
