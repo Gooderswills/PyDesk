@@ -439,5 +439,16 @@ Tickets = [
                                 "fail_message": "Michael gets the codebase from another developer but is not happy as it is an outdated version",
                                 "time_taken": 1
                                 },
+                                {"id": "2080",
+                                 "user": "David; Logistics",
+                                 "priority": "Low",
+                                 "issue": "Unable to organise new deliveries, error message: 'License Expired'",
+                                 "option_1": "Email finance to renew delivery management system",
+                                 "option_2": "Remove David's account from the delivery system",
+                                 "correct_option": "option_1",
+                                 "success_message": "You email finance who renew the delivery management system, David can now access the system again",
+                                 "fail_message": "You get the same error message while trying to remove David's account, he still cannot access the delivery system",
+                                 "time_taken": 0.5
+                                 },
 
         ]
