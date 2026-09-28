@@ -450,5 +450,16 @@ Tickets = [
                                  "fail_message": "You get the same error message while trying to remove David's account, he still cannot access the delivery system",
                                  "time_taken": 0.5
                                  },
+                                 {"id": "2082",
+                                  "user": "Brian; Warehouse Operations",
+                                  "priority": "High",
+                                  "issue": "Cannot view current stock levels, error message: 'Database not found'",
+                                  "option_1": "Check with ISP to ensure that they are not down",
+                                  "option_2": "SSH into warehouse server to check what is wrong with the database",
+                                  "correct_option": "option_2",
+                                  "success_message": "You ssh into the warehouse server and see that the database has been removed so you go to the recent backups and restore the latest database version",
+                                  "fail_message": "The ISP reports that all their services are working, Brian can still not view the stock levels",
+                                  "time_taken": 1
+                                  },
 
         ]
