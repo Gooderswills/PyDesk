@@ -18,8 +18,8 @@ Tickets = [
     "option_2": "Run antivirus scan on users computer",
     "correct_option": "option_1",
     "success_message": "You check the server, find that it is down and restart it, finance database comes back online",
-    "fail_message": "You run an antivirus scan which takes 2 hours, but nothing is found and database is still unreachable",
-    "time_taken": 1
+    "fail_message": "You run an antivirus scan which takes a long time, but nothing is found and database is still unreachable",
+    "time_taken": 1.5
     },
     {"id": "1152",
     "user": "Joseph; HR",
@@ -109,7 +109,7 @@ Tickets = [
     "fail_message": "You check the meeting room, but the notes are not there",
     "time_taken": 0.5
     },
-    {"id": "1777",
+    {"id": "1765",
     "user": "Daniel; Engineering",
     "priority": "Critical",
     "issue": "Unable to access latest mockup, error message: 'permission denied'",
@@ -120,7 +120,7 @@ Tickets = [
     "fail_message": "You ask the engineering manager, he says he cannot tell you what the latest mockup is and to get on with helping Daniel",
     "time_taken": 0.5
     },
-    {"id": "1765",
+    {"id": "1777",
     "user": "Samantha; Sales",
     "priority": "High",
     "issue": "Unable to access sales report, error message: 'Database does not exist'",
@@ -202,11 +202,11 @@ Tickets = [
     "priority": "High",
     "issue": "Unable to access QA testing sandbox, error message: 'Unable to connect to sandbox'",
     "option_1": "Restart QA testing sandbox server",
-    "option_2": "ASk finance to check that they still have a valid subscription for the sandbox software",
+    "option_2": "Ask finance to check that they still have a valid subscription for the sandbox software",
     "correct_option": "option_1",
     "success_message": "You restart the QA testing sandbox server, and now Edward can access it",
     "fail_message": "You ask finance about the subscription, they say it is still valid but Edward still cannot access the QA testing sandbox",
-    "time_taken": 0.5,
+    "time_taken": 0.5
     },
     {"id": "1995",
     "user": "Dylan; Project Management",
@@ -215,12 +215,12 @@ Tickets = [
     "option_1": "Do a virus scan on the users computer",
     "option_2": "Update the project management software to the latest version",
     "correct_option": "option_2",
-    "success_message": "You update the project management software to the latest version, now Dylan can access the gannt charts and project timelines",
+    "success_message": "You update the project management software to the latest version, now Dylan can access the gantt charts and project timelines",
     "fail_message": "You do a virus scan on the users computer, but find no viruses and Dylan still cannot access the gannt charts and project timelines",
     "time_taken": 1
     },
     {"id": "2001",
-    "user": "Steve; Fulfillment",
+    "user": "Steve; Fulfilment",
     "priority": "Critical",
     "issue": "Unable to access warehouse management systems, inventory tracking and order processing, error message: 'Unknown fatal error'",
     "option_1": "Restart physical and cloud servers,report bug to software developers to fix the issue",
@@ -228,7 +228,7 @@ Tickets = [
     "correct_option": "option_1",
     "success_message": "You restart the physical and cloud servers, report the bug to the software developers who fix the issue, steve can now access the warehouse management systems, inventory tracking and order processing",
     "fail_message": "You check the connection from the servers to the warehouse, find that it is working and steve still cannot access the warehouse management systems, inventory tracking and order processing",
-    "time_taken": 2,
+    "time_taken": 2
     },
     {"id": "2009",
     "user": "Rachel; Customer Support",
@@ -248,7 +248,7 @@ Tickets = [
     "option_1": "Buy a new phone for the customer relations team",
     "option_2": "Contact mobile provider to check if the number has expired, if it has then renew the number",
     "correct_option": "option_2",
-    "success_message": "You contact the mobile provider, they say that the number has expire, they renew the number and now Tom can make calls to customer again",
+    "success_message": "You contact the mobile provider, they say that the number has expired, they renew the number and now Tom can make calls to customer again",
     "fail_message": "You buy a new phone for the customer relations team, but Tom still cannot make calls to customers, the phone is redundant",
     "time_taken": 1
     },
@@ -420,7 +420,7 @@ Tickets = [
     {"id": "2070",
     "user": "Max; Product Development",
     "priority": "High",
-    "issue": "Unable to join team zoom meeting, error message: 'Connection interrupted",
+    "issue": "Unable to join team zoom meeting, error message: 'Connection interrupted'",
     "option_1": "Restart the production floor internet server",
     "option_2": "Email finance to check that they have paid for zoom pro",
     "correct_option": "option_1",
@@ -435,7 +435,7 @@ Tickets = [
     "option_1": "Restore Michael's access to the codebase by ensuring he has access to the git repository and is in the developers group",
     "option_2": "Get Michael to ask another developer for the codebase",
     "correct_option": "option_1",
-    "success_message": "You add Michael back to the developer group and you also add gim back to the git repository",
+    "success_message": "You add Michael back to the developer group and you also add him back to the git repository",
     "fail_message": "Michael gets the codebase from another developer but is not happy as it is an outdated version",
     "time_taken": 1
     },
@@ -468,8 +468,8 @@ Tickets = [
     "option_1": "Remote into Bob's computer and reinstall the network drivers on Bob's computer",
     "option_2": "Restart the fulfillment database",
     "correct_option": "option_1",
-    "success_message": "You remote into Bob's computer and reinstall his network drivers as they were previosuly outdated, he can now access the order database",
-    "fail_message": "You restart the fulfilment databse, bringing it down for other users, but Bob can still not view the order database",
+    "success_message": "You remote into Bob's computer and reinstall his network drivers as they were previously outdated, he can now access the order database",
+    "fail_message": "You restart the fulfilment database, bringing it down for other users, but Bob can still not view the order database",
     "time_taken": 1.5
     },
     
