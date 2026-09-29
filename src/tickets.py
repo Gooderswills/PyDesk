@@ -472,5 +472,27 @@ Tickets = [
     "fail_message": "You restart the fulfilment database, bringing it down for other users, but Bob can still not view the order database",
     "time_taken": 1.5
     },
+    {"id": "2090",
+    "user": "Sam; Apprentice",
+    "priority": "Low",
+    "issue": "Cannot access learning portal, error message: 'Access Denied'",
+    "option_1": "Check that the learning portal is still working and active",
+    "option_2": "Ensure that Sam has access to the learning portal, if not then add him to the learning portal group",
+    "correct_option": "option_2",
+    "success_message": "You find that Sam has not been added to the learning portal group so you add him to it, he now has access to the learning portal",
+    "fail_message": "You find that the learning portal is still active, Sam can still not access the learning portal",
+    "time_taken": 0.5
+    },
+    {"id": "2092",
+    "user": "Alex; Customer Relations",
+    "priority": "Medium",
+    "issue": "Cannot access customer records, error message: 'Server not found'",
+    "option_1": "Ensure that Alex has the correct permissions to access the customer records",
+    "option_2": "Restart the customer records server",
+    "correct_option": "option_2",
+    "success_message": "You restart the customer records server, now Alex can access the customer records again",
+    "fail_message": "Alex already has the correct permissions but still cannot access the customer records",
+    "time_taken": 0.5
+    },
     
     ]
