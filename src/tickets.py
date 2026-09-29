@@ -253,7 +253,7 @@ Tickets = [
                  "time_taken": 1
                 },
                 {"id": "2020",
-                 "user": "Anna; logistics",
+                 "user": "Anna; Logistics",
                  "priority": "Critical",
                  "issue": "Unable to access delivery tracking system, error message: 'Account deactivated'",
                  "option_1": "Check if Anna has the correct permissions, update if needed",
@@ -461,5 +461,16 @@ Tickets = [
                                   "fail_message": "The ISP reports that all their services are working, Brian can still not view the stock levels",
                                   "time_taken": 1
                                   },
+                                  {"id": "2086",
+                                   "user": "Bob; Fulfilment",
+                                   "priority": "Low",
+                                   "issue": "Cannot view order database, error message: 'Lost connection to the server'",
+                                   "option_1": "Remote into Bob's computer and reinstall the network drivers on Bob's computer",
+                                   "option_2": "Restart the fulfillment database",
+                                   "correct_option": "option_1",
+                                   "success_message": "You remote into Bob's computer and reinstall his network drivers as they were previosuly outdated, he can now access the order database",
+                                   "fail_message": "You restart the fulfilment databse, bringing it down for other users, but Bob can still not view the order database",
+                                   "time_taken": 1.5
+                                   },
 
         ]
