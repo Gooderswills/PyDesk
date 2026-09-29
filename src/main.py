@@ -10,6 +10,7 @@ score = 0
 money = 0
 day = 1
 
+WRONG_OPTION_MULTIPLIER = 1.50
 HOURS_PER_DAY = 8
 
 ticket_queue = []
@@ -100,22 +101,24 @@ while game_over == False:
 
         if correct:
             print(ticket["success_message"])
+            time_spent = ticket["time_taken"]
             score = score + 1
             money = money + 10
             day_score = day_score + 1
             day_money = day_money + 10
         else:
             print(ticket["fail_message"])
+            time_spent = ticket["time_taken"] * WRONG_OPTION_MULTIPLIER
             money = money - 5
             day_money = day_money - 5
 
         day_tickets = day_tickets + 1
-        shift_time = shift_time - ticket["time_taken"]
+        shift_time = shift_time - time_spent
 
         print()
         print()
         print("---------------------------------------------------")
-        print("You took", ticket["time_taken"], "hours to complete this ticket")
+        print("You took", time_spent, "hours to complete this ticket")
         print("You have earned £", money, "so far by completing", score, "tickets")
         save_game(name, score, money, day)
         print("---------------------------------------------------")
@@ -146,7 +149,7 @@ while game_over == False:
     if choice == "1":
         day = day + 1
         save_game(name, score, money, day)
-    else:
+    elif choice == "2":
         print("---------------------------------------------------")
         print("You finished on Day", day, "having completed", score, "tickets and earned £", money)
         print("----------------------------------------------------")
