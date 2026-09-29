@@ -90,6 +90,7 @@ while game_over == False:
         choice = ""
         while choice != "1" and choice != "2":
             choice = input("Option 1 or 2? ")
+            print()
             if choice != "1" and choice != "2":
                 print("Invalid input, try again")
 
