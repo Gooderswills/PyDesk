@@ -494,5 +494,16 @@ Tickets = [
     "fail_message": "Alex already has the correct permissions but still cannot access the customer records",
     "time_taken": 0.5
     },
+    {"id": "2095",
+     "user": "Mia; HR",
+     "priority": "High",
+     "issue": "Cannot access HR portal, error message: 'Account locked'",
+     "option_1": "Remote into Mia's computer to try her password again",
+     "option_2": "Send Mia a password reset link to unlock her account",
+     "correct_option": "option_2",
+     "success_message": "You send Mia a password reset link, she resets her password and she can now access the HR portal again",
+     "fail_message": "You remote into Mia's computer to try her password again, but it is still locked and she cannot access the HR portal",
+     "time_taken": 1
+    },
     
     ]
