@@ -505,5 +505,16 @@ Tickets = [
      "fail_message": "You remote into Mia's computer to try her password again, but it is still locked and she cannot access the HR portal",
      "time_taken": 1
     },
+    {"id": "2098",
+     "user": "Lian; Artist",
+     "priority": "Low",
+     "issue": "Cannot access colleagues art files to peer review, error message: 'Access Denied'",
+     "option_1": "Reset Liam's password",
+     "option_2": "Ensure that Liam's colleague has shared the art files with him and that he has access to them",
+     "correct_option": "option_2",
+     "success_message": "You check with Liam's colleague and find out that they have not shared the art files with him, you ask them to share the files and now Liam can access the art files to peer review",
+     "fail_message": "You reset Liam's password but he still cannot access the art files to peer review",
+     "time_taken": 0.5
+    },
     
     ]
