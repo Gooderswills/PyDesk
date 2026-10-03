@@ -516,5 +516,16 @@ Tickets = [
      "fail_message": "You reset Liam's password but he still cannot access the art files to peer review",
      "time_taken": 0.5
     },
+    {"id": "2100",
+     "user": "Frank; IT Support",
+     "priority": "Medium",
+     "issue": "Cannot access company documentation, error message: 'Access Denied'",
+     "option_1": "Send Frank the link to the documentation",
+     "option_2": "Ensure Frank has the correct permissions to access the documentation, update if needed",
+     "correct_option": "option_2",
+     "success_message": "You check Frank's permissions, find that he does not have access to it, so you update his permissions and he can now access the company documentation",
+     "fail_message": "You send Frank the link to the documentation, but he gets the same error message and still cannot access it",
+     "time_taken": 0.5
+    },
     
     ]
