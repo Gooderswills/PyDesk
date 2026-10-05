@@ -538,5 +538,16 @@ Tickets = [
     "fail_message": "You check Mark's permissions, find that he has the correct permissions but he still cannot access the internal mail server",
     "time_taken": 1
     },
+    {"id": "2110",
+    "user": "Nina; Finance",
+    "priority": "Low",
+    "issue": "Cannot access company benefits portal, error message: 'Connection Lost",
+    "option_1": "Reset Nina's password",
+    "option_2": "Ensure that Nina is connected to the internet and that the benefits portal is still active",
+    "correct_option": "option_2",
+    "success_message": "You check Nina's internet, find that she is not connected, you connect her back to the internet and she can now access the benefits portal",
+    "fail_message": "You reset Nina's password but she still cannot access the benefits portal",
+    "time_taken": 0.5
+    },
     
     ]
