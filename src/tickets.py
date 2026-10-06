@@ -549,5 +549,27 @@ Tickets = [
     "fail_message": "You reset Nina's password but she still cannot access the benefits portal",
     "time_taken": 0.5
     },
+    {"id": "2120",
+    "user": "Oliver; IT Support",
+    "priority": "Medium",
+    "issue": "Cannot access company internal wiki, error message: 'Access Denied'",
+    "option_1": "Ensure that Oliver's computer is connected to the company network",
+    "option_2": "Ensure that Oliver has the correct permissions to access the internal wiki, update if needed",
+    "correct_option": "option_2",
+    "success_message": "You check Oliver's permissions, find that he does not have access to the internal wiki, so you update his permissions and now he can access the internal wiki",
+    "fail_message": "You check Oliver's computer, find that it is connected to the company network but he still cannot access the internal wiki",
+    "time_taken": 1
+    },
+    {"id": "2132",
+    "user": "Sophia; Marketing",
+    "priority": "Low",
+    "issue": "Cannot access marketing analytics dashboard, error message: 'Server Error'",
+    "option_1": "Ensure that Sophia's computer is connected to the internet",
+    "option_2": "Ensure that marketing analytics server is up and running, restart if needed",
+    "correct_option": "option_2",
+    "success_message": "You check the marketing analytics server, find that it is down, you restart it and now Sophia can access the marketing analytics dashboard",
+    "fail_message": "You check Sophia's computer, find that it is connected to the internet but the marketing analytics server is still down and she cannot access the dashboard",
+    "time_taken": 1.5
+    },
     
     ]
