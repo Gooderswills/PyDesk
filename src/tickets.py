@@ -571,5 +571,16 @@ Tickets = [
     "fail_message": "You check Sophia's computer, find that it is connected to the internet but the marketing analytics server is still down and she cannot access the dashboard",
     "time_taken": 1.5
     },
+    {"id": "2135",
+    "user": "Thomas; QA",
+    "priority": "High",
+    "issue": "Cannot access QA testing environment, error message: 'License Expired'",
+    "option_1": "Ensure that Thomas has the correct permissions to access the QA testing environment, update if needed",
+    "option_2": "Contact finance to renew the QA testing environment license",
+    "correct_option": "option_2",
+    "success_message": "You contact finance to renew the QA testing environment license, they do so and now Thomas can access the QA testing environment",
+    "fail_message": "You check Thomas's permissions, find that he has the correct permissions but he still cannot access the QA testing environment",
+    "time_taken": 1
+    },
     
     ]
