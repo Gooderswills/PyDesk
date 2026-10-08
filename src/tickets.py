@@ -582,5 +582,16 @@ Tickets = [
     "fail_message": "You check Thomas's permissions, find that he has the correct permissions but he still cannot access the QA testing environment",
     "time_taken": 1
     },
+    {"id": "2142",
+    "user": "Liam; Engineering",
+    "priority": "Critical",
+    "issue": "All machines in engineering department are unresponsive, error message: 'Ransomware attack detected'",
+    "option_1": "Pay the ransom to attackers to regain access to the machines",
+    "option_2": "Isolate the machines from the network, run a full malware scan and restore from backups if needed, then report to cyber security department and update all devices with latest software and security patches",
+    "correct_option": "option_2",
+    "success_message": "You isolate the machines from the network, run a full malware scan and restore from backups, then you report to the cyber security department and update all devices with the latest software and security patches, the machines are now responsive again",
+    "fail_message": "You pay the ransom to the attackers, but they do not give you the decryption key and the machines are still unresponsive",
+    "time_taken": 3.5
+    },
     
     ]
