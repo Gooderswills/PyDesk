@@ -593,5 +593,27 @@ Tickets = [
     "fail_message": "You pay the ransom to the attackers, but they do not give you the decryption key and the machines are still unresponsive",
     "time_taken": 3.5
     },
+    {"id": "2150",
+    "user": "Emma; R&D",
+    "priority": "Medium",
+    "issue": "Cannot conduct research, error message: 'Connection Lost'",
+    "option_1": "Ensure that Emma has the correct permissions to be able to conduct research, update if needed",
+    "option_2": "Ensure that Emma's computer is connected to the internet and that she has the most up to date drivers and software installed",
+    "correct_option": "option_2",
+    "success_message": "You check Emma's computer, find that it is not connected to the internet, you connect it again and you update her drivers to the latest version and run a software update, she can now conduct research again",
+    "fail_message": "You check Emma's permissions, find that she has the correct permissions to be able to conduct research but she still cannot conduct research",
+    "time_taken": 1
+    },
+    {"id": "2156",
+    "user": "Chris; IT",
+    "priority": "High",
+    "issue": "Cannot access database architecture diagrams, error message: 'File not found'",
+    "option_1": "Ensure that Chris is connected to the internet and that he is allowed to access the database architecture diagrams, update if needed",
+    "option_2": "Check what happened to the database architecture diagrams, restore from recent backups if needed",
+    "correct_option": "option_2",
+    "success_message": "You check the recent backups, find that the database architecture diagrams were moved and renamed, you tell Chris the new file path and he can now access them again",
+    "fail_message": "You check Chris's internet connection and permissions, find that they are correct but he still cannot access the database architecture diagrams",
+    "time_taken": 1.5
+    },
     
     ]
