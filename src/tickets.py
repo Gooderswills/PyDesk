@@ -615,5 +615,16 @@ Tickets = [
     "fail_message": "You check Chris's internet connection and permissions, find that they are correct but he still cannot access the database architecture diagrams",
     "time_taken": 1.5
     },
+    {"id": "2160",
+    "user": "Callum; Maintenance",
+    "priority": "Medium",
+    "issue": "ID card it not working, error message: 'Access Expired",
+    "option_1": "Ensure that Callum's ID card is connected to the company network",
+    "option_2": "Check if Callum's ID card has expired, if it has then renew it",
+    "correct_option": "option_2",
+    "success_message": "You check Callum's ID card, find that it has expired, you renew it and his card is now working again",
+    "fail_message": "You check Callum's ID card find that it is conected to the company network but is still not working",
+    "time_taken": 0.5
+    },
     
     ]
