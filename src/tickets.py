@@ -637,5 +637,16 @@ Tickets = [
     "fail_message": "You check Tom's computer, find that it is connected to the internet but he still cannot send packages out for delivery",
     "time_taken": 0.5
     },
+    {"id": "2167",
+    "user": "Elliot; Artist",
+    "priority": "Medium",
+    "issue": "Drawing tablet is not working, error message: 'Outdated drivers'",
+    "option_1": "Ensure that Elliot's drawing tablet is connected to his computer and that it is turned on",
+    "option_2": "Update the drivers for Elliot's drawing tablet",
+    "correct_option": "option_2",
+    "success_message": "You update the drivers for Elliot's drawing tablet, it is now connected to his computer and working again",
+    "fail_message": "You check Elliot's drawing tablet, find that it is connected to his computer and turned on but it still is not working",
+    "time_taken": 1
+    },
     
     ]
