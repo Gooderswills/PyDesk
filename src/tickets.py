@@ -648,5 +648,16 @@ Tickets = [
     "fail_message": "You check Elliot's drawing tablet, find that it is connected to his computer and turned on but it still is not working",
     "time_taken": 1
     },
+    {"id": "2171",
+    "user": "John; Project Management",
+    "priority": "High",
+    "issue": "Cannot email team members, error message: 'Mail server not found'",
+    "option_1": "Ensure that the mail server is up and running and that it is configured correctly",
+    "option_2": "Ensure that John's computer is connected to the internet",
+    "correct_option": "option_1",
+    "success_message": "You check the mail server, find that it is misconfigured, you fix the configuration and now John can email his team members again",
+    "fail_message": "You check John's computer, find that it is connected to the internet but he still cannot email his team members",
+    "time_taken": 1.5
+    },
     
     ]
