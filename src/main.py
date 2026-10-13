@@ -4,6 +4,8 @@ import random
 import tickets
 import json
 import subprocess
+import colorama
+from colorama import Fore, Style
 
 game_over = False
 score = 0
@@ -77,7 +79,7 @@ while game_over == False:
         ticket = get_next_ticket()
         print("---------------------------------------------------")
         print("Day", day)
-        print("You have ", shift_time, "hours left in your shift")
+        print(Fore.YELLOW + "You have ", shift_time, "hours left in your shift" + Style.RESET_ALL)
         print("---------------------------------------------------")
         print("ID:", ticket["id"])
         print("User:", ticket["user"])
@@ -101,14 +103,14 @@ while game_over == False:
             correct = ticket["correct_option"] == "option_2"
 
         if correct:
-            print(ticket["success_message"])
+            print(Fore.GREEN + ticket["success_message"] + Style.RESET_ALL)
             time_spent = ticket["time_taken"]
             score = score + 1
             money = money + 10
             day_score = day_score + 1
             day_money = day_money + 10
         else:
-            print(ticket["fail_message"])
+            print(Fore.RED + ticket["fail_message"] + Style.RESET_ALL)
             time_spent = ticket["time_taken"] * WRONG_OPTION_MULTIPLIER
             money = money - 5
             day_money = day_money - 5
@@ -120,7 +122,7 @@ while game_over == False:
         print()
         print("---------------------------------------------------")
         print("You took", time_spent, "hours to complete this ticket")
-        print("You have earned £", money, "so far by completing", score, "tickets")
+        print(Fore.GREEN + "You have earned £", money, "so far by completing", score, "tickets" + Style.RESET_ALL)
         save_game(name, score, money, day)
         print("---------------------------------------------------")
         print("Game Saved")
@@ -132,7 +134,7 @@ while game_over == False:
     print("=====================================================")
     print("Tickets completed today:", day_tickets)
     print("Tickets solved correctly today:", day_score)
-    print("Money earned/lost today: £", day_money)
+    print(Fore.YELLOW + "Money earned/lost today: £", day_money + Style.RESET_ALL)
     print("-----------------------------------------------------")
     print("Total tickets completed:", score)
     print("Total money: £", money)
