@@ -659,5 +659,27 @@ Tickets = [
     "fail_message": "You check John's computer, find that it is connected to the internet but he still cannot email his team members",
     "time_taken": 1.5
     },
+    {"id": "2176",
+    "user": "Steve; Web Development",
+    "priority": "Critical",
+    "issue": "Website is inaccessible, error message: 'Domain expired'",
+    "option_1": "Ensure that the domain is active and that the domain registration has not expired, renew if needed",
+    "option_2": "Ensure that the web server is running and that it is configured correctly, restart if needed",
+    "correct_option": "option_1",
+    "success_message": "You check the domain registration, find that it has expired, you renew it and now the website is accessible again",
+    "fail_message": "You check the web server, find that it is running and configured correctly but the website is still inaccessible",
+    "time_taken": 1
+    },
+    {"id": "2180",
+    "user": "Charlie; Management",
+    "priority": "Medium",
+    "issue": "Cannot save files to company server, error message: 'Disk Full'",
+    "option_1": "Check disk space, run disk cleanup to remove unnecessary files and upgrade storage if needed",
+    "option_2": "Ensure that Charlie has the correct permissions to save files to the company server, update if needed",
+    "correct_option": "option_1",
+    "success_message": "You check the disk space, find that it is full, you run a disk cleanup to remove unnecessary files and then upgrade the storage, Charlie can now save files to the company server again",
+    "fail_message": "You check Charlie's permissions, find that he has the correct permissions but he still cannot save files to the company server",
+    "time_taken": 2
+    },
     
     ]
