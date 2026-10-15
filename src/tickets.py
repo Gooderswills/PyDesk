@@ -681,5 +681,16 @@ Tickets = [
     "fail_message": "You check Charlie's permissions, find that he has the correct permissions but he still cannot save files to the company server",
     "time_taken": 2
     },
+    {"id": "2187",
+    "user": "Diana; Manufacturing",
+    "priority": "Critical",
+    "issue": "Manufacturing line is down, error message: 'Corrupted configuration files'",
+    "option_1": "Check configuration files, update or restore from backup if needed",
+    "option_2": "Restart manufacturing line servers and check for any software updates",
+    "correct_option": "option_1",
+    "success_message": "You check the configuration files, find that they are corrupted, you restore them from a recent backup and the manufacturing line is now up and running again",
+    "fail_message": "You restart the manufacturing line servers and check for and install pending software updates, but the manufacturing line is still down",
+    "time_taken": 1.5
+    },
     
     ]
