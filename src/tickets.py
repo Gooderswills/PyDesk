@@ -692,5 +692,16 @@ Tickets = [
     "fail_message": "You restart the manufacturing line servers and check for and install pending software updates, but the manufacturing line is still down",
     "time_taken": 1.5
     },
+    {"id": "2193",
+    "user": "Edward; Product Development",
+    "priority": "High",
+    "issue": "Cannot access Product Development database, error message: 'Access Denied'",
+    "option_1": "Ask one of Edward's colleagues to share the database with him",
+    "option_2": "Ensure that Edward has the correct permissions to access the Product Development database, update if needed",
+    "correct_option": "option_2",
+    "success_message": "You check Edward's permissions, find that he does not have access to the Product Development database, you update his permissions and he can now access the database",
+    "fail_message": "You ask one of Edward's colleagues to share the database with him, but he has read only access and cannot make any changes to it",
+    "time_taken": 1
+    },
     
     ]
