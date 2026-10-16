@@ -126,7 +126,7 @@ while game_over == False:
         save_game(name, score, money, day)
         print("---------------------------------------------------")
         print("Game Saved")
-        time.sleep(5)
+        input("Press Enter to continue...")
 
     clear_terminal()
     print("=====================================================")
@@ -141,7 +141,7 @@ while game_over == False:
     print("=====================================================")
     save_game(name, score, money, day)
     print("Game Saved")
-    time.sleep(4)
+    input("Press Enter to continue...")
 
     choice = ""
     while choice != "1" and choice != "2":
