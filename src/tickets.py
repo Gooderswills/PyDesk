@@ -703,5 +703,16 @@ Tickets = [
     "fail_message": "You ask one of Edward's colleagues to share the database with him, but he has read only access and cannot make any changes to it",
     "time_taken": 1
     },
+    {"id": "2198",
+    "user": "Dylan; Digital Marketing",
+    "priority": "Medium",
+    "issue": "Cannot access marketing analytics dashboard, error message: 'Connection Lost'",
+    "option_1": "Remote into Dylan's computer to ensure that he is connected to the internet and that he has the most up to date drivers installed on his system",
+    "option_2": "Ensure that Dylan has the correct permissions to access the marketing analytics dashboard, update if needed",
+    "correct_option": "option_1",
+    "success_message": "You remote into Dylan's computer, find that he is not connected to the internet, you connect him to the internet and update his drivers to the latest version, he can now access the marketing analytics dashboard again",
+    "fail_message": "You check Dylan's permissions, find that he has the correct permissions but he is getting the same error message and cannot access the marketing analytics dashboard",
+    "time_taken": 1
+    },
     
     ]
