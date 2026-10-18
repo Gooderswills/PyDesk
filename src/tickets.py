@@ -714,5 +714,16 @@ Tickets = [
     "fail_message": "You check Dylan's permissions, find that he has the correct permissions but he is getting the same error message and cannot access the marketing analytics dashboard",
     "time_taken": 1
     },
+    {"id": "2203",
+    "user": "Fiona; Resource Management",
+    "priority": "Low",
+    "issue": "Cannot send out resource reports. error message: 'Report failed to generate'",
+    "option_1": "Ensure that Fiona's password is correct and that she is connected to the internet",
+    "option_2": "Ensure that Fiona has the correct permissions to generate resource reports and that the software is up to date",
+    "correct_option": "option_2",
+    "success_message": "You check Fiona's permissions, find that she does not have access to generate resource reports, you update her permissions and she can now generate resource reports again",
+    "fail_message": "You check Fiona's password and internet connection, find that they are correct but she still cannot generate resource reports",
+    "time_taken": 0.5
+    },
     
     ]
