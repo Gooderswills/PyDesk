@@ -725,5 +725,16 @@ Tickets = [
     "fail_message": "You check Fiona's password and internet connection, find that they are correct but she still cannot generate resource reports",
     "time_taken": 0.5
     },
+    {"id": "2207",
+    "user": "George; Business Management",
+    "priority": "Low",
+    "issue": "Cannot acces businness analytics dashboard, error message: 'License Expired'",
+    "option_1": "Ensure that George has the correct permissions to access the business analytics dashboard, update if needed",
+    "option_2": "Email finance to renew the analytics dashboard license",
+    "correct_option": "option_2",
+    "success_message": "You email finance to renew the analytics dashboard license, they do so and now George can access the business analytics dashboard again",
+    "fail_message": "You check George's permissions, find that he has the correct permissions but he still cannot access the business analytics dashboard",
+    "time_taken": 1.5
+    },
     
     ]
