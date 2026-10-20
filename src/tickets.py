@@ -736,5 +736,16 @@ Tickets = [
     "fail_message": "You check George's permissions, find that he has the correct permissions but he still cannot access the business analytics dashboard",
     "time_taken": 1.5
     },
+    {"id": "2211",
+    "user": "Hannah; QA",
+    "priority": "Critical",
+    "issue": "Cannot access QA testing environment and is unable to edit test log, error message: 'Access Denied'",
+    "option_1": "Ensure that Hannah has the correct permissions to access the QA testing environment and edit the test log, update if needed",
+    "option_2": "Check if the QA testing environment is down, restart if needed",
+    "correct_option": "option_1",
+    "success_message": "You check Hannah's permissions, find that she does not have access to the QA testing environment and cannot edit the test log, you update her permissions and she can now access the QA testing environment and edit the test log",
+    "fail_message": "You check the QA testing environment, find that it is up and running but Hannah still cannot access it or edit the test log",
+    "time_taken": 0.5
+    },
     
     ]
