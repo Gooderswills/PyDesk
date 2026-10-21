@@ -747,5 +747,16 @@ Tickets = [
     "fail_message": "You check the QA testing environment, find that it is up and running but Hannah still cannot access it or edit the test log",
     "time_taken": 0.5
     },
+    {"id": "2214",
+    "user": "Ian; Delivery Operations",
+    "priority": "Medium",
+    "issue": "Cannot send out orders for delivery, error message: 'API key expired'",
+    "option_1": "Ensure that Ian has the correct permissions to send out orders for delivery, update if needed",
+    "option_2": "Renew the API key for the delivery system",
+    "correct_option": "option_2",
+    "success_message": "You renew the API key for the delivery system, and now Ian can send out orders for delivery again",
+    "fail_message": "You check Ian's permissions, find that he is in the delivery group and all his permissions are correct but he still cannot send out orders for delivery as the API key is expired",
+    "time_taken": 1
+    },
     
     ]
