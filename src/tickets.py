@@ -758,5 +758,16 @@ Tickets = [
     "fail_message": "You check Ian's permissions, find that he is in the delivery group and all his permissions are correct but he still cannot send out orders for delivery as the API key is expired",
     "time_taken": 1
     },
+    {"id": "2217",
+    "user": "Jack; Apprentice",
+    "priority": "Low",
+    "issue": "Needs login details for company computer",
+    "option_1": "Verify Jack's identity by sending him a magic link to his email, then reset his password and send him the new login details",
+    "option_2": "Ask Jack to wait until tomorrow when the IT department is less busy and can help him with his login details",
+    "correct_option": "option_1",
+    "success_message": "You send Jack a magic link to his email, he verifies his identity and you reset his password and send him the new login details, he can now log into the company computer",
+    "fail_message": "You ask Jack to wait until tomorrow when the IT department is less busy",
+    "time_taken": 0.5
+    },
     
     ]
