@@ -11,6 +11,7 @@ game_over = False
 score = 0
 money = 0
 day = 1
+money_color = True
 
 WRONG_OPTION_MULTIPLIER = 1.50
 HOURS_PER_DAY = 8
@@ -77,6 +78,15 @@ while game_over == False:
     while shift_time > 0:
         clear_terminal()
         ticket = get_next_ticket()
+        def priority_colour(priority):
+            if priority == "Critical":
+                print(Fore.MAGENTA + "Priority:", priority + Style.RESET_ALL)
+            elif priority == "High":
+                print(Fore.RED + "Priority:", priority + Style.RESET_ALL)
+            elif priority == "Medium:":
+                print(Fore.YELLOW + "Priority:", priority + Style.RESET_ALL)
+            elif priority == "Low":
+                print(Fore.GREEN + "Priority:", priority + Style.RESET_ALL)
         print("---------------------------------------------------")
         print("Day", day)
         print(Fore.YELLOW + "You have ", shift_time, "hours left in your shift" + Style.RESET_ALL)
@@ -84,7 +94,7 @@ while game_over == False:
         print("ID:", ticket["id"])
         print("User:", ticket["user"])
         print("Issue:", ticket["issue"])
-        print("Priority:", ticket["priority"])
+        priority_colour(ticket["priority"])
         print()
         print("Option 1:", ticket["option_1"])
         print("Option 2:", ticket["option_2"])
@@ -109,11 +119,13 @@ while game_over == False:
             money = money + 10
             day_score = day_score + 1
             day_money = day_money + 10
+            money_color = True
         else:
             print(Fore.RED + ticket["fail_message"] + Style.RESET_ALL)
             time_spent = ticket["time_taken"] * WRONG_OPTION_MULTIPLIER
             money = money - 5
             day_money = day_money - 5
+            money_color = False
 
         day_tickets = day_tickets + 1
         shift_time = shift_time - time_spent
@@ -122,6 +134,10 @@ while game_over == False:
         print()
         print("---------------------------------------------------")
         print("You took", time_spent, "hours to complete this ticket")
+        if money_color == True:
+            print(Fore.GREEN + "Money earned: £10" + Style.RESET_ALL)
+        else:
+            print(Fore.RED + "Money lost: £5" + Style.RESET_ALL)
         print(Fore.GREEN + "You have earned £", money, "so far by completing", score, "tickets" + Style.RESET_ALL)
         save_game(name, score, money, day)
         print("---------------------------------------------------")
