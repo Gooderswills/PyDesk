@@ -769,5 +769,16 @@ Tickets = [
     "fail_message": "You ask Jack to wait until tomorrow when the IT department is less busy",
     "time_taken": 0.5
     },
+    {"id": "2220",
+    "user": "Max; Project Management",
+    "priority": "High",
+    "issue": "Cannot access staff scheduling system, error message: 'Access Denied'",
+    "option_1": "Ensure that Max can access the scheduling system and that his permissions are correct",
+    "option_2": "Check if the staff scheduling system is down, restart if needed",
+    "correct_option": "option_1",
+    "success_message": "You check Max's permissions, find that he does not have access to the staff scheduling system, so you update his permissions and he can now access the staff scheduling system",
+    "fail_message": "You check the staff scheduling system, find that it is up and running but Max still cannot access it",
+    "time_taken": 1
+    },
     
     ]
