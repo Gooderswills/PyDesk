@@ -780,5 +780,16 @@ Tickets = [
     "fail_message": "You check the staff scheduling system, find that it is up and running but Max still cannot access it",
     "time_taken": 1
     },
+    {"id": "2224",
+    "user": "Steve; Fulfilment",
+    "priority": "Low",
+    "issue": "Cannot access inventory management system, error message: 'Access Denied'",
+    "option_1": "Ensure that Steve's computer is connected to the internet",
+    "option_2": "Ensure that Steve has the correct permissions to access the inventory management system, update if needed",
+    "correct_option": "option_2",
+    "success_message": "You check Steve's permissions, find that he does not have access to the inventory management system, you update his permissions and now he can access the inventory management system again",
+    "fail_message": "You check Steve's computer, find that it is connected to the internet but he still cannot access the inventory management system",
+    "time_taken": 0.5
+    },
     
     ]
