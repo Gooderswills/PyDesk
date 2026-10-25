@@ -791,5 +791,16 @@ Tickets = [
     "fail_message": "You check Steve's computer, find that it is connected to the internet but he still cannot access the inventory management system",
     "time_taken": 0.5
     },
+    {"id": "2227",
+    "user": "Sophie; Product Development",
+    "priority": "Medium",
+    "issue": "Cannot access product development database, error message: 'Network Connection Lost'",
+    "option_1": "Ensure that Sophie's computer is connected to the internet and that she has the most up to date drivers installed on her system",
+    "option_2": "Ensure that Sophie has the correct permissions to access the product development database, update if needed",
+    "correct_option": "option_1",
+    "success_message": "You check Sophie's computer, find that her computer is not plugged into the ethernet, you plug it in and update her drivers to the latest version and she can now access the product development database again",
+    "fail_message": "You check Sophie's permissions, find that she has the correct permissions but she is getting the same error message and still cannot access the product development database",
+    "time_taken": 1
+    },
     
     ]
