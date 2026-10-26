@@ -802,5 +802,16 @@ Tickets = [
     "fail_message": "You check Sophie's permissions, find that she has the correct permissions but she is getting the same error message and still cannot access the product development database",
     "time_taken": 1
     },
+    {"id": "2232",
+    "user": "Lilly; Resource Management",
+    "priority": "Low",
+    "issue": "Cannot access work emails, error message: 'Please Login'",
+    "option_1": "Ensure that Lilly's computer is connected to the internet and that she has the most up to date drivers installed on her system",
+    "option_2": "Send Lilly a magic link to her personal email to verify her identity and reset her password",
+    "correct_option": "option_2",
+    "success_message": "You send Lilly a magic link to her personal email, she verifies her identity and you reset her password, she can now access her work emails again",
+    "fail_message": "You check Lilly's computer, find that it is connected to the internet and her drivers are up to date but she still cannot access her work emails",
+    "time_taken": 0.5
+    },
     
     ]
