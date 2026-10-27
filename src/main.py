@@ -48,6 +48,56 @@ def clear_terminal():
     except Exception:
         print("\n" * 40)
 
+def priority_colour(priority):
+    if priority == "Critical":
+        print(Fore.MAGENTA + "Priority:", priority + Style.RESET_ALL)
+    elif priority == "High":
+        print(Fore.RED + "Priority:", priority + Style.RESET_ALL)
+    elif priority == "Medium":
+        print(Fore.YELLOW + "Priority:", priority + Style.RESET_ALL)
+    elif priority == "Low":
+        print(Fore.GREEN + "Priority:", priority + Style.RESET_ALL)
+
+def multi_stage_tickets(ticket, day, shift_time):
+        stages = ticket["stages"]
+        all_correct = True
+        for number, stage in enumerate(stages, start=1):
+            clear_terminal()
+            print("---------------------------------------------------")
+            print("Day", day)
+            print(Fore.YELLOW + "You have ", shift_time, "hours left in your shift" + Style.RESET_ALL)
+            print("---------------------------------------------------")
+            print("ID:", ticket["id"])
+            print("User:", ticket["user"])
+            print("Issue:", ticket["issue"])
+            priority_colour(ticket["priority"])
+            print()
+            print(Fore.CYAN + f"Stage {number} of {len(stages)}" + Style.RESET_ALL)
+            print(stage["prompt"])
+            print()
+            print("Option 1:", stage["option_1"])
+            print("Option 2:", stage["option_2"])
+            print()
+
+            choice = ""
+            while choice != "1" and choice != "2":
+                choice = input("Option 1 or 2? ")
+                print()
+                if choice != "1" and choice != "2":
+                    print("Invalid input, try again")
+
+            if stage["correct_option"] == "option_" + choice:
+                print(Fore.GREEN + "That worked, moving on..." + Style.RESET_ALL)
+            else:
+                print(Fore.RED + "That didn't help..." + Style.RESET_ALL)
+                all_correct = False
+
+            if number < len(stages):
+                input("Press Enter to continue...")
+
+        return all_correct
+
+
 save_data = load_game()
 
 if save_data:
@@ -78,39 +128,30 @@ while game_over == False:
     while shift_time > 0:
         clear_terminal()
         ticket = get_next_ticket()
-        def priority_colour(priority):
-            if priority == "Critical":
-                print(Fore.MAGENTA + "Priority:", priority + Style.RESET_ALL)
-            elif priority == "High":
-                print(Fore.RED + "Priority:", priority + Style.RESET_ALL)
-            elif priority == "Medium:":
-                print(Fore.YELLOW + "Priority:", priority + Style.RESET_ALL)
-            elif priority == "Low":
-                print(Fore.GREEN + "Priority:", priority + Style.RESET_ALL)
-        print("---------------------------------------------------")
-        print("Day", day)
-        print(Fore.YELLOW + "You have ", shift_time, "hours left in your shift" + Style.RESET_ALL)
-        print("---------------------------------------------------")
-        print("ID:", ticket["id"])
-        print("User:", ticket["user"])
-        print("Issue:", ticket["issue"])
-        priority_colour(ticket["priority"])
-        print()
-        print("Option 1:", ticket["option_1"])
-        print("Option 2:", ticket["option_2"])
-        print()
-        choice = ""
-        while choice != "1" and choice != "2":
-            choice = input("Option 1 or 2? ")
-            print()
-            if choice != "1" and choice != "2":
-                print("Invalid input, try again")
 
-        correct = False
-        if choice == "1":
-            correct = ticket["correct_option"] == "option_1"
-        elif choice == "2":
-            correct = ticket["correct_option"] == "option_2"
+        if ticket.get("multi_stage"):
+            correct = multi_stage_tickets(ticket, day, shift_time)
+        else:
+            print("---------------------------------------------------")
+            print("Day", day)
+            print(Fore.YELLOW + "You have ", shift_time, "hours left in your shift" + Style.RESET_ALL)
+            print("---------------------------------------------------")
+            print("ID:", ticket["id"])
+            print("User:", ticket["user"])
+            print("Issue:", ticket["issue"])
+            priority_colour(ticket["priority"])
+            print()
+            print("Option 1:", ticket["option_1"])
+            print("Option 2:", ticket["option_2"])
+            print()
+            choice = ""
+            while choice != "1" and choice != "2":
+                choice = input("Option 1 or 2? ")
+                print()
+                if choice != "1" and choice != "2":
+                    print("Invalid input, try again")
+
+            correct = ticket["correct_option"] == "option_" + choice
 
         if correct:
             print(Fore.GREEN + ticket["success_message"] + Style.RESET_ALL)
@@ -150,7 +191,7 @@ while game_over == False:
     print("=====================================================")
     print("Tickets completed today:", day_tickets)
     print("Tickets solved correctly today:", day_score)
-    print(Fore.YELLOW + "Money earned/lost today: £", day_money + Style.RESET_ALL)
+    print(Fore.YELLOW + f"Money earned/lost today: £{day_money}" + Style.RESET_ALL)
     print("-----------------------------------------------------")
     print("Total tickets completed:", score)
     print("Total money: £", money)

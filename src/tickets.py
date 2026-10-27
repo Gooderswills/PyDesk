@@ -824,5 +824,24 @@ Tickets = [
     "fail_message": "You check the customer logs database, find that it is up and running but Liam still cannot access it",
     "time_taken": 1
     },
+    {"id": "2240",
+    "user": "Mia; Accounting",
+    "priority": "High",
+    "issue": "Cannot log into accounting software, error message: 'Account Locked'",
+    "multi_stage": True,
+    "stages": [
+        {"prompt": "Mia cannot log into the accounting software, what do you do first?",
+         "option_1": "Check if Mia's account is locked",
+         "option_2": "Check if the accounting software is down",
+         "correct_option": "option_1"},
+        {"prompt": "Mia's account is locked, what do you do next?",
+         "option_1": "Send Mia a magic link to verify her identity and reset her password",
+         "option_2": "Delete her old account and make a new one for her",
+         "correct_option": "option_1"},
+    ],
+    "success_message": "You check Mia's account and find that it is locked, you send her a magic link to verify her identity and reset her password, she can now log into the accounting software again",
+    "fail_message": "You waste time on the wrong steps and Mia still cannot log into the accounting software",
+    "time_taken": 1
+    },    
     
     ]
