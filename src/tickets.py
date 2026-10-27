@@ -813,5 +813,16 @@ Tickets = [
     "fail_message": "You check Lilly's computer, find that it is connected to the internet and her drivers are up to date but she still cannot access her work emails",
     "time_taken": 0.5
     },
+    {"id": "2235",
+    "user": "Liam; Customer Relations",
+    "priority": "Medium",
+    "issue": "Cannot access customer logs, error message: 'Database not found'",
+    "option_1": "Reconfigure Liam's computer so that it's file system can find the customer logs database",
+    "option_2": "Check if the customer logs database is down, restart if needed",
+    "correct_option": "option_1",
+    "success_message": "You reconfigure Liam's computer so that it's file system can find the customer logs database, he can now access the customer logs again",
+    "fail_message": "You check the customer logs database, find that it is up and running but Liam still cannot access it",
+    "time_taken": 1
+    },
     
     ]
