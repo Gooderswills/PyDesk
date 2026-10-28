@@ -20,6 +20,7 @@
 
 All tickets in the game are inside `tickets.py` please add them in here and make sure all tickets follow the format below:
 
+Normal ticket:
 ```python
 {"id": "unique 4 digit number (Higher than the last ID)",
 "user": "Name; Department",
@@ -27,9 +28,31 @@ All tickets in the game are inside `tickets.py` please add them in here and make
 "issue": "Problem, error message: 'error",
 "option_1": "First choice",
 "option_2": "Second choice",
-"correct_option": "correct option (e.g. option_1)",
+"correct_option": "correct option (e.g: option_1)",
 "success_message": "Go in more depth about what the option does",
 "fail_message": "Say why it failed",
+"time_taken": 1 (just an estimate)
+},
+```
+Multi stage ticket:
+```python
+{"id": "unique 4 digit number (Higher than the last ID)",
+"user": "Name; Department",
+"priority": "Low,Medium,High,Critical",
+"issue": "problem, error message: 'error'",
+"multi_stage": True,
+"stages": [
+    {"prompt": "Problem, what do you do first?",
+        "option_1": "First choice",
+        "option_2": "Second choice",
+        "correct_option": "correct option (e.g: option_1)"},
+    {"prompt": "Problem that first one reveals, what do you do next?",
+        "option_1": "First choice",
+        "option_2": "Second choice",
+        "correct_option": "correct option (e.g: option_1)"},
+    ],
+"success_message": "Go in more depth about how the ticket was solved, why it is correct",
+"fail_message": "Say it failed because they chose the wrong options",
 "time_taken": 1 (just an estimate)
 },
 ```

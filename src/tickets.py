@@ -842,6 +842,17 @@ Tickets = [
     "success_message": "You check Mia's account and find that it is locked, you send her a magic link to verify her identity and reset her password, she can now log into the accounting software again",
     "fail_message": "You waste time on the wrong steps and Mia still cannot log into the accounting software",
     "time_taken": 1
-    },    
+    },
+    {"id": "2245",
+    "user": "Bob; IT Support",
+    "priority": "Medium",
+    "issue": "Cannot mark tickets as resolved, error message: 'Failed to update ticket status'",
+    "option_1": "Ensure that Bob;s computer is connected to the internet and that he has the most up to date drivers installed on his system",
+    "option_2": "Ensure that Bob has the correct permissions to mark tickets as resolved, update if needed",
+    "correct_option": "option_2",
+    "success_message": "You check bob's permissions, find that he does not have access to mark tickets as resolved, you update his permissions and now he can mark tickets as resolved again",
+    "fail_message": "You check Bob's computer, find that it is connected to the internet and his drivers are up to date but he still cannot mark tickets as resolved",
+    "time_taken": 1
+    },
     
     ]
