@@ -854,5 +854,16 @@ Tickets = [
     "fail_message": "You check Bob's computer, find that it is connected to the internet and his drivers are up to date but he still cannot mark tickets as resolved",
     "time_taken": 1
     },
+    {"id": "2247",
+    "user": "Alice; HR",
+    "priority": "Low",
+    "issue": "Cannot access payslip, error message: 'Not Found'",
+    "option_1": "Ensure that Alice's computer is connected to the internet and that she has the most up to date drivers installed on her system",
+    "option_2": "Ensure that finance has generated the payslips and that Alice has recieved it via email, if not then send her a copy of the payslip",
+    "correct_option": "option_2",
+    "success_message": "You check with finance and find that they have generated the payslips but Alice has not recieved it via email, you send her a copy of the payslip and she can now acces it",
+    "fail_message": "You check Alice's computer, find that it is connected to the internet and her drivers are up to date but she still cannot access her payslip",
+    "time_taken": 1
+    },
     
     ]
