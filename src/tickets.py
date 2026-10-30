@@ -865,5 +865,16 @@ Tickets = [
     "fail_message": "You check Alice's computer, find that it is connected to the internet and her drivers are up to date but she still cannot access her payslip",
     "time_taken": 1
     },
+    {"id": "2250",
+    "user": "Charlie; Engineering",
+    "priority": "Critical",
+    "issue": "Entire engineering department cannot access CAD software, error message: 'License Expired'",
+    "option_1": "Email finance to renew the CAD software license",
+    "option_2": "Ensure that the CAD software is installed on all engineering computers and that they are connected to the internet",
+    "correct_option": "option_1",
+    "success_message": "You email finance to renew the CAD software license, they do so and now the entire engineering department can access the CAD software again",
+    "fail_message": "You check the CAD software on all engineering computers, find that it is installed and connected to the internet but they still cannot access it",
+    "time_taken": 1.5
+    },
     
     ]
